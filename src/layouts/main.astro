@@ -1,9 +1,14 @@
 ---
+/// Components Reactives
+import SidebarDesktop from '@components/sidebar.astro';
 import BaseHead from '@components/BaseHead.astro';
 import Header from '@components/Header.astro';
 import Footer from '@components/Footer.astro';
+
+/// Consts
 import { SITE_TITLE, SITE_DESCRIPTION } from '@hooks/consts.ts';
 
+/// Styles
 import '@styles/app.css';
 ---
 
@@ -14,12 +19,18 @@ import '@styles/app.css';
 				  description={SITE_DESCRIPTION} 
 		/>
 	</head>
-	<body>
+	<body 
+		class="relative w-screen min-h-screen overflow-x-hidden bg-[#1E1E1E] justify-center items-center 
+		align-middle transition-all duration-100 ease-in-out"
+	>
         <Header />
-		<grid class="">
-			
+		<div 
+			class="w-[85%] max-w-screen-xl h-auto flex flex-row relative top-16 left-0 right-0 gap-x-24
+			justify-center m-auto transition-all duration-100 ease-in-out text-white"
+		>
+			<SidebarDesktop client:visible />
         	<slot />
-		</grid>
+		</div>
 		<Footer />
     </body>
 </html>

@@ -4,6 +4,25 @@
 export const SITE_TITLE = "maopadev";
 export const SITE_DESCRIPTION = "Welcome to my website!";
 
+export const ROUTES = [
+  {
+    id: "01",
+    path: "/",
+    title: "Inicio",
+  },
+  {
+    id: "02",
+    path: "/experience",
+    title: "Experiencia",
+  },
+  {
+    id: "03",
+    path: "/contact",
+    title: "Contacto",
+  },
+];
+
+
 export const LIST_TAGS = [
   { id: 1, title: "Java", color: "bg-[#eeb530]" },
   { id: 2, title: "Spring Boot", color: "bg-[#]" },
