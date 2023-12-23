@@ -1,0 +1,39 @@
+---
+
+import myMemoji from '@images/ec22897b-bbc7-4320-8822-d082d353c6bc 1.svg'
+import { JSON_LIST_BUTTONS_SALUTE } from '@hooks/consts.ts'
+---
+
+<section 
+			id="salute"
+			class="container w-[100%] h-full m-auto flex flex-col gap-4 justify-center items-start align-middle 
+			transition-all duration-100 ease-in-out"
+		>
+		<div id="text">
+			<img src={myMemoji.src} alt="My Memoji" width="110px" />
+			<h1 class="text-[32px] font-termina-heavy w-auto h-auto inline-flex">
+				Mario here 
+				<span class="font-bricolage font-black">
+					!
+				</span>
+			</h1>
+			<p class="text-[18px]">Full Stack Developer that enjoys solving problems!  ❤️</p>
+		</div>
+		<ul 
+			id="buttons"
+			class="w-auto h-auto inline-flex gap-2 flex-1 flex-wrap justify-start items-center 
+			align-middle text-black"
+		>
+				{JSON_LIST_BUTTONS_SALUTE.map((button) => (
+					<li 
+						class={`w-auto h-auto inline-flex p-2 px-8 rounded-full justify-center items-center
+						align-middle ${button.color} hover:-translate-x-1 hover:-translate-y-1 transition-all transform-gpu
+						duration-300 ease-in-out text-[18px] font-bold`}
+					>
+						<a href={button.href} target="_blank" rel="noopener noreferrer">
+							{button.text}
+						</a>
+					</li>
+				))}
+			</ul>
+		</section>

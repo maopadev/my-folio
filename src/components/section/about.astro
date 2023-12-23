@@ -1,0 +1,15 @@
+---
+import { JSON_ABOUT_TEXT_SALUTE } from '@hooks/consts.ts'
+---
+
+<section 
+	id="about"
+	class="container w-[100%] h-full m-auto flex flex-col justify-center items-start align-middle 
+	gap-y-4 transition-all duration-100 ease-in-out"
+>
+	{ JSON_ABOUT_TEXT_SALUTE.map((text) => (
+		<p class="text-[16px]">
+			{text}
+		</p>
+	))}
+</section>

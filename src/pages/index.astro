@@ -1,72 +1,28 @@
 ---
-import MainLayout from '../layouts/main.astro'
-import { LIST_EXPERENCIES, LIST_TAGS } from '../consts.ts'
+/// Layouts
+import MainLayout from '@layouts/main.astro'
+
+/// Sections
+import SaluteSection from '@components/section/salute.astro'
+import AboutSection from '@components/section/about.astro'
+import ProjectsSection from '@components/section/projects.astro'
+import SkillsSection from '@components/section/skills.astro'
+
 ---
 <MainLayout>
-	<main>
-		<section id="welcoming">
-			<!-- Aqui vendra la imagen -->
-			<div>
-				<h3>Hello There!</h3>
-				<h1>Mario Ortega al habla</h1>
-			</div>
-		</section>
-		<section id="experience">
-			<header id="title">
-				<h2>Experiencia</h2>
-				<!-- Icon -->
-			</header>
-			<ul id="ordered-list">
-				{ LIST_EXPERENCIES.map((experience) => (
-					<li>
-						<h3>{experience.job} en {experience.company[0]}</h3>
-						<h5>{experience.period[0]} - {experience.period[1]}</h5>
-						<p>{experience.description}</p>
-						<ul id="tags-ordered-list">
-							{ experience.tags.map((tag) => (
-								<li class={LIST_TAGS.find((t) => t.id === tag)?.color}>
-									{LIST_TAGS.find((t) => t.id === tag)?.title}
-								</li>
-							))}
-						</ul>
-					</li>
-				))}
-			</ul>
-		</section>
-		<section id="projects">
-			<header id="title">
-				<h2>Projects</h2>
-				<!-- Icon -->
-			</header>
-			<ul id="ordered-list">
-
-			</ul>
-		</section>
-		<section id="contact">
-			<div>
-				<h3>¿Quieres contactar conmigo?</h3>
-				<p></p>
-			</div>
-			<form>
-				<input type="text" placeholder="Nombre" />
-				<input type="text" placeholder="Email" />
-				<textarea placeholder="Mensaje"></textarea>
-				<button>Enviar</button>
-			</form>
-		</section>
+	<main 
+		class="w-[90%] h-auto max-w-screen-xl flex flex-col mx-auto py-8 md:py-12 lg:py-16 
+		gap-y-10 md:gap-y-16 lg:gap-y-20 justify-center items-center align-middle transition-all 
+		duration-100 ease-in-out text-white"
+	>
+		<SaluteSection client:visible />
+		<AboutSection client:visible />
+		<ProjectsSection client:visible />
+		<SkillsSection client:visible />
 	</main>
 </MainLayout>
 
 <style is:global>
-	main {
-		@apply w-[90%] h-auto max-w-screen-xl mx-auto py-8 md:py-12 lg:py-16 justify-center items-center 
-		align-middle transition-all duration-100 ease-in-out text-black;
-	}
-
-	section {
-		@apply container w-[100%] h-full m-auto flex flex-col justify-center items-center align-middle transition-all 
-		duration-100 ease-in-out;
-	}
 
 	#ordered-list {
 		@apply w-[100%] h-auto flex flex-col flex-wrap justify-center items-center align-middle 
@@ -83,4 +39,3 @@ import { LIST_EXPERENCIES, LIST_TAGS } from '../consts.ts'
 		align-middle transition-all duration-100 ease-in-out;
 	}
 </style>
-
