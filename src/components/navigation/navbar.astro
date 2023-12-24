@@ -1,0 +1,33 @@
+---
+/// import HeaderLink from '../HeaderLink.astro';
+import ToggleMenuButton from './toggle.astro';
+import logo from '@images/ec22897b-bbc7-4320-18233-d083e112wc6bc.svg'
+---
+
+<header 
+	id="container-header"
+	class="w-[85%] max-w-screen-xl h-auto flex flex-row fixed top-0 left-0 right-0 gap-x-24
+	justify-center items-center align-middle m-auto transition-all duration-100 ease-in-out 
+	py-8 z-10"
+>
+	<nav 
+		class="w-auto h-auto inline-flex flex-grow mx-auto gap-x-6 justify-between items-center 
+		align-middle transition-all duration-100 ease-in-out"
+	>
+		<div 
+			id="separator" 
+			class="w-[50%] h-[7px] lg:block hidden bg-slate-700 rounded-full" 
+		/>
+		<img 
+			id="logo"
+			src={logo.src} 
+			alt="The logo of the website"
+			class="stroke-accent-two transition-all duration-200 ease-in-out"
+		/>
+		<div 
+			id="separator" 
+			class="w-[100%] h-[7px] bg-slate-700 rounded-full" 
+		/>
+		<ToggleMenuButton />
+	</nav>
+</h>

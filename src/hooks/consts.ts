@@ -96,7 +96,7 @@ export const JSON_LIST_BUTTONS_SALUTE = [
 ];
 
 export const JSON_ABOUT_TEXT_SALUTE = [
-  "Actualmente estoy en SearchIT creando y realizando el mantenimiento de aplicaciones web para diferentes clientes en colaboración con esta empresa.",
-  "Me gusta crear aplicaciones cautivadoras y visualmente impactantes usando las herramientas de desarrollo como React, Astro, Java, JSP, Figma, ... logrando aplicaciones atractivas y funcionales.",
+  `Actualmente estoy en SearchIT creando y realizando el mantenimiento de aplicaciones web para diferentes clientes en colaboración con esta empresa.`,
+  `Me gusta crear aplicaciones cautivadoras y visualmente impactantes usando las herramientas de desarrollo como React, Astro, Java, JSP, Figma, ... logrando aplicaciones atractivas y funcionales.`,
   `“Me considero una alguien que consigue lo que se propone, ya que creo que los logros son los resultados de las decisiones que se toman “`,
 ];

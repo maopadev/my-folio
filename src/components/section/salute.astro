@@ -1,6 +1,6 @@
 ---
 
-import myMemoji from '@images/ec22897b-bbc7-4320-8822-d082d353c6bc 1.svg'
+import memoji from '@images/ec22897b-bbc7-4320-8822-d082d353c6bc1a.svg'
 import { JSON_LIST_BUTTONS_SALUTE } from '@hooks/consts.ts'
 ---
 
@@ -10,7 +10,11 @@ import { JSON_LIST_BUTTONS_SALUTE } from '@hooks/consts.ts'
 			transition-all duration-100 ease-in-out"
 		>
 		<div id="text">
-			<img src={myMemoji.src} alt="My Memoji" width="110px" />
+			<img 
+				src={memoji.src} 
+				alt="My Memoji"
+				class="w-[100px] h-[100px] relative z-50" 
+			/>
 			<h1 class="text-[32px] font-termina-heavy w-auto h-auto inline-flex">
 				Mario here 
 				<span class="font-bricolage font-black">
@@ -25,13 +29,16 @@ import { JSON_LIST_BUTTONS_SALUTE } from '@hooks/consts.ts'
 			align-middle text-black"
 		>
 				{JSON_LIST_BUTTONS_SALUTE.map((button) => (
-					<li 
-						class={`w-auto h-auto inline-flex p-2 px-8 rounded-full justify-center items-center
-						align-middle ${button.color} hover:-translate-x-1 hover:-translate-y-1 transition-all transform-gpu
-						duration-300 ease-in-out text-[18px] font-bold`}
-					>
-						<a href={button.href} target="_blank" rel="noopener noreferrer">
-							{button.text}
+					<li>
+						<a 
+							href={button.href} 
+							target="_blank" 
+							rel="noopener noreferrer"
+							class={`w-auto h-auto inline-flex p-2 px-8 rounded-full justify-center items-center
+							align-middle ${button.color} hover:-translate-x-1 hover:-translate-y-1 transition-all transform-gpu
+							duration-300 ease-in-out text-[14px] font-bold`}
+						>
+							<span class="pointer-events-none">{button.text}</span>
 						</a>
 					</li>
 				))}

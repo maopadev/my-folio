@@ -1,14 +1,21 @@
 ---
 import { JSON_ABOUT_TEXT_SALUTE } from '@hooks/consts.ts'
+
+let decorator = 'px-6 py-10 border-4 rounded-[18px] border-gray-600/[.50] font-medium italic ' 
+	+ 'hover:text-accent-one hover:border-accent-one hover:shadow-xl ' 
+	+ 'hover:-translate-x-1 hover:-translate-y-2 transition-all duration-200 ease-in-out'
 ---
 
 <section 
 	id="about"
 	class="container w-[100%] h-full m-auto flex flex-col justify-center items-start align-middle 
-	gap-y-4 transition-all duration-100 ease-in-out"
+	gap-y-8 transition-all duration-100 ease-in-out"
 >
-	{ JSON_ABOUT_TEXT_SALUTE.map((text) => (
-		<p class="text-[16px]">
+	{ JSON_ABOUT_TEXT_SALUTE.map((text, i) => (
+		<p id={`text-${i}`} 
+		   class={`text-[16px] ${ i === 2 
+			? decorator : ''}`}
+		>
 			{text}
 		</p>
 	))}
