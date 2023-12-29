@@ -13,11 +13,6 @@ export default defineConfig({
     defaultLocale: 'es',
     routing: {
       prefixDefaultLocale: false
-    },
-    fallback: {
-      'es': 'en',
-      'en': 'es',
-      'pt': 'es'
     }
   }
 });
