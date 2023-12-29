@@ -1,7 +1,7 @@
 {
   "title": "Gracias por ver mi porfolio!",
   "salute": {
-    "title": "Aquí Mario<span class='font-bricolage font-black'>!</span>",
+    "title": "Aqui Mario<span id='exclamacion'>!</span>",
     "subtitle": "Desarrollador Full Stack que disfruta de resolver problemas! ❤️",
     "access-buttons": [
       {

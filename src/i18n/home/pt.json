@@ -1,7 +1,7 @@
 {
   "title": "Bem-vindo ao meu porfolio!",
   "salute": {
-    "title": "Mario Aqui<span class='font-bricolage font-black'>!</span>",
+    "title": "Mario Aqui<span id='exclamacion'>!</span>",
     "subtitle": "Full Stack Developer que gosta de resolver problemas! ❤️",
     "access-buttons": [
       {
