@@ -11,6 +11,7 @@
       "@images/*": ["./src/assets/images/*"],
       "@hooks/*": ["./src/hooks/*"],
       "@db/*": ["./src/db/*"],
+      "@i18n/*": ["./src/i18n/*"],
     }
   }
 }

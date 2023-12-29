@@ -1,0 +1,62 @@
+{
+  "title": "Welcome to my portfolio!",
+  "salute": {
+    "title": "Mario Here<span class='font-bricolage font-black'>!</span>",
+    "subtitle": "Full Stack Developer who enjoys solving problems! ❤️",
+    "access-buttons": [
+      {
+        "id": 1,
+        "text": "Download CV",
+        "href": "",
+        "color": "bg-accent-one"
+      },
+      {
+        "id": 2,
+        "text": "AA",
+        "href": "",
+        "color": "bg-accent-two"
+      }
+    ]
+  },
+  "about": {
+    "DESCRIPTION_JOB": "I am currently at SearchIT creating and maintaining web applications for different clients in collaboration with this company.",
+    "MY_WORKING": "I like to create captivating and visually impactful applications using development tools such as React, Astro, Java, JSP, Figma, ... achieving attractive and functional applications.",
+    "cita": "“I consider myself someone who achieves what he sets out to do, since I believe that achievements are the results of the decisions that are made“"
+  },
+  "projects": {
+    "title": "Projects",
+    "projects": [
+      {
+        "id": 1,
+        "title": "Project 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
+        "image": "https://picsum.photos/200/300",
+        "href": ""
+      },
+      {
+        "id": 2,
+        "title": "Project 2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
+        "image": "https://picsum.photos/200/300",
+        "href": ""
+      },
+      {
+        "id": 3,
+        "title": "Project 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
+        "image": "https://picsum.photos/200/300",
+        "href": ""
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send"
+    }
+  }
+}

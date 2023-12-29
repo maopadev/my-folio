@@ -7,6 +7,17 @@ import prefetch from "@astrojs/prefetch";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
-  integrations: [mdx(), sitemap(), tailwind(), prefetch()]
+  integrations: [mdx(), sitemap(), tailwind(), prefetch()],
+  i18n: {
+    locales: ['es', 'en', 'pt'],
+    defaultLocale: 'es',
+    routing: {
+      prefixDefaultLocale: false
+    },
+    fallback: {
+      'es': 'en',
+      'en': 'es',
+      'pt': 'es'
+    }
+  }
 });

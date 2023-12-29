@@ -1,5 +1,8 @@
 ---
-import { JSON_ABOUT_TEXT_SALUTE } from '@hooks/consts.ts'
+/// i18N Imports
+import { getHomeDataInternational } from "@i18n/index.ts"
+const { currentLocale } = Astro
+const i18n = getHomeDataInternational({ currentLocale })
 
 let decorator = 'px-6 py-10 border-4 rounded-[18px] border-gray-600/[.50] font-medium italic ' 
 	+ 'hover:text-accent-one hover:border-accent-one hover:shadow-xl ' 
@@ -11,12 +14,24 @@ let decorator = 'px-6 py-10 border-4 rounded-[18px] border-gray-600/[.50] font-m
 	class="container w-[100%] h-full m-auto flex flex-col justify-center items-start align-middle 
 	gap-y-8 transition-all duration-100 ease-in-out"
 >
-	{ JSON_ABOUT_TEXT_SALUTE.map((text, i) => (
-		<p id={`text-${i}`} 
-		   class={`text-[16px] ${ i === 2 
-			? decorator : ''}`}
-		>
-			{text}
-		</p>
-	))}
+	<p
+		id=""
+		class="text-[16px]"
+	>
+		{i18n.about.DESCRIPTION_JOB}
+	</p>
+	<p
+		id=""
+		class="text-[16px]"
+	>
+		{i18n.about.MY_WORKING}
+	</p>
+	<p 
+		id="cita-decorator" 
+		class="text-[16px] px-6 py-10 border-4 rounded-[18px] border-gray-600/[.50] 
+		font-medium italic hover:text-accent-one hover:border-accent-one hover:shadow-xl 
+		hover:-translate-x-1 hover:-translate-y-2 transition-all duration-200 ease-in-out"
+	>
+		{i18n.about.cita}
+	</p>
 </section>

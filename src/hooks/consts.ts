@@ -1,9 +1,5 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
-
-export const SITE_TITLE = "maopadev";
-export const SITE_DESCRIPTION = "Welcome to my website!";
-
 export const ROUTES = [
   {
     id: "01",
@@ -78,25 +74,4 @@ export const LIST_EXPERENCIES = [
     period: [201910, 202111],
     tags: [1, 28, 2, 29, 30, 31, 32, 33],
   },
-];
-
-export const JSON_LIST_BUTTONS_SALUTE = [
-  {
-    id: 1,
-    text: "Descargar CV",
-    href: ``,
-    color: "bg-accent-one",
-  },
-  {
-    id: 2,
-    text: "AA",
-    href: ``,
-    color: "bg-accent-two",
-  },
-];
-
-export const JSON_ABOUT_TEXT_SALUTE = [
-  `Actualmente estoy en SearchIT creando y realizando el mantenimiento de aplicaciones web para diferentes clientes en colaboración con esta empresa.`,
-  `Me gusta crear aplicaciones cautivadoras y visualmente impactantes usando las herramientas de desarrollo como React, Astro, Java, JSP, Figma, ... logrando aplicaciones atractivas y funcionales.`,
-  `“Me considero una alguien que consigue lo que se propone, ya que creo que los logros son los resultados de las decisiones que se toman “`,
 ];

@@ -1,7 +1,11 @@
 ---
-
+/// Images Imports
 import memoji from '@images/ec22897b-bbc7-4320-8822-d082d353c6bc1a.svg'
-import { JSON_LIST_BUTTONS_SALUTE } from '@hooks/consts.ts'
+
+/// i18N Imports
+import { getHomeDataInternational } from "@i18n/index.ts"
+const { currentLocale } = Astro
+const i18n = getHomeDataInternational({ currentLocale })
 ---
 
 <section 
@@ -15,20 +19,16 @@ import { JSON_LIST_BUTTONS_SALUTE } from '@hooks/consts.ts'
 				alt="My Memoji"
 				class="w-[100px] h-[100px] relative z-50" 
 			/>
-			<h1 class="text-[32px] font-termina-heavy w-auto h-auto inline-flex">
-				Mario here 
-				<span class="font-bricolage font-black">
-					!
-				</span>
-			</h1>
-			<p class="text-[18px]">Full Stack Developer that enjoys solving problems!  ❤️</p>
+			<p set:html={i18n.salute.title} 
+				class="text-[32px] font-termina-heavy w-auto h-auto inline-flex" />
+			<p class="text-[18px]">{ i18n.salute.subtitle }</p>
 		</div>
 		<ul 
 			id="buttons"
 			class="w-auto h-auto inline-flex gap-2 flex-1 flex-wrap justify-start items-center 
 			align-middle text-black"
 		>
-				{JSON_LIST_BUTTONS_SALUTE.map((button) => (
+				{i18n.salute['access-buttons']?.map((button) => (
 					<li>
 						<a 
 							href={button.href} 
