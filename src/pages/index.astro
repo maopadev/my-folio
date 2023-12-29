@@ -15,32 +15,8 @@ const i18n = getHomeDataInternational({ currentLocale })
 
 ---
 <MainLayout title={i18n.title}>
-	<main 
-		class="w-auto h-auto flex flex-col flex-grow mx-auto gap-y-16 md:gap-y-20 lg:gap-y-26 
-		justify-center items-center align-middle transition-all 
-		duration-100 ease-in-out text-white"
-	>
 		<SaluteSection />
 		<AboutSection />
 		<ProjectsSection />
 		<SkillsSection />
-	</main>
 </MainLayout>
-
-<style is:global>
-
-	#ordered-list {
-		@apply w-[100%] h-auto flex flex-col flex-wrap justify-center items-center align-middle 
-		transition-all duration-100 ease-in-out;
-	}
-
-	#tags-ordered-list {
-		@apply w-auto h-auto inline-flex gap-2 flex-wrap justify-end 
-		items-center align-middle transition-all duration-100 ease-in-out pl-[40%];
-	}
-
-	#tags-ordered-list li {
-		@apply w-auto h-auto inline-flex p-[2px] px-4 rounded-full justify-center items-center 
-		align-middle transition-all duration-100 ease-in-out;
-	}
-</style>

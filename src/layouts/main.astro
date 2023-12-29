@@ -1,7 +1,6 @@
 ---
 /// Components Reactives
-import SidebarDeskComponent from '@components/navigation/desktop.astro';
-import LogoNavbarComponent from '@components/navigation/navbar.astro';
+import Navbar from '@components/navigation/navbar.astro';
 import BaseHead from '@components/base.astro';
 import Footer from '@components/navigation/footer.astro';
 
@@ -29,15 +28,15 @@ const { title, description } = Astro.props;
 		class="relative w-screen min-h-screen overflow-x-hidden bg-[#1E1E1E] justify-center items-center 
 		align-middle transition-all duration-100 ease-in-out"
 	>
-        <LogoNavbarComponent />
-		<div 
+        <Navbar />
+		<main 
 			id="container"
-			class="w-[85%] max-w-screen-xl h-auto flex flex-row relative top-36 left-0 right-0 gap-x-24
-			justify-center m-auto transition-all duration-100 ease-in-out text-white"
+			class="w-[85%] max-w-[900px] h-auto flex flex-col relative top-36 left-0 right-0 flex-grow mx-auto 
+			gap-y-16 md:gap-y-20 lg:gap-y-26 justify-center items-center align-middle transition-all 
+			duration-100 ease-in-out text-white"
 		>
-			<SidebarDeskComponent />
         	<slot />
-		</div>
+		</main>
 		<Footer />
     </body>
 </html>
