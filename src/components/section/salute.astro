@@ -40,7 +40,7 @@ const i18n = getHomeDataInternational({ currentLocale })
 		align-middle text-white"
 	>
 		{i18n.SALUTE.ACCESS_BUTTONS.map((button) => (
-			<li id={button.ID}>
+			<li id={`button-${button.ID}`}>
 				<a
 					href={button.HREF} 
 					target="_blank" 
