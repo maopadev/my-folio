@@ -1,24 +1,24 @@
 {
-  "title": "Bem-vindo ao meu porfolio!",
-  "salute": {
-    "title": "Mario Aqui<span id='exclamacion'>!</span>",
-    "subtitle": "Full Stack Developer que gosta de resolver problemas! ❤️",
-    "access-buttons": [
+  "TITLE": "Bem-vindo ao meu porfolio!",
+  "SALUTE": {
+    "TITLE": "Mario Aqui<span id='exclamacion'>!</span>",
+    "SUBTITLE": "Full Stack Developer que gosta de resolver problemas! ❤️",
+    "ACCESS_BUTTONS": [
       {
-        "id": 1,
-        "text": "Baixar CV",
-        "href": "",
-        "color": "bg-accent-one"
+        "ID": 1,
+        "TEXT": "Baixar CV",
+        "HREF": "",
+        "COLOR": "bg-accent-one"
       },
       {
-        "id": 2,
-        "text": "AA",
-        "href": "",
-        "color": "bg-accent-two"
+        "ID": 2,
+        "TEXT": "AA",
+        "HREF": "",
+        "COLOR": "bg-accent-two"
       }
     ]
   },
-  "about": {
+  "ABOUT": {
     "DESCRIPTION_JOB": "Atualmente estou na SearchIT criando e mantendo aplicações web para diferentes clientes em colaboração com esta empresa.",
     "MY_WORKING": "Gosto de criar aplicações cativantes e visualmente impactantes usando ferramentas de desenvolvimento como React, Astro, Java, JSP, Figma, ... conseguindo aplicações atraentes e funcionais.",
     "cita": "“Me considero alguém que alcança o que se propõe a fazer, pois acredito que as conquistas são resultados das decisões que são tomadas“"

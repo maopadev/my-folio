@@ -1,24 +1,24 @@
 {
-  "title": "Welcome to my portfolio!",
-  "salute": {
-    "title": "Mario Here<span class='font-bricolage font-black'>!</span>",
-    "subtitle": "Full Stack Developer who enjoys solving problems! ❤️",
-    "access-buttons": [
+  "TITLE": "Welcome to my portfolio!",
+  "SALUTE": {
+    "TITLE": "Mario Here!",
+    "SUBTITLE": "Full Stack Developer who enjoys solving problems! ❤️",
+    "ACCESS_BUTTONS": [
       {
-        "id": 1,
-        "text": "Download CV",
-        "href": "",
-        "color": "bg-accent-one"
+        "ID": 1,
+        "TEXT": "Download CV",
+        "HREF": "",
+        "COLOR": "bg-accent-one"
       },
       {
-        "id": 2,
-        "text": "AA",
-        "href": "",
-        "color": "bg-accent-two"
+        "ID": 2,
+        "TEXT": "AA",
+        "HREF": "",
+        "COLOR": "bg-accent-two"
       }
     ]
   },
-  "about": {
+  "ABOUT": {
     "DESCRIPTION_JOB": "I am currently at SearchIT creating and maintaining web applications for different clients in collaboration with this company.",
     "MY_WORKING": "I like to create captivating and visually impactful applications using development tools such as React, Astro, Java, JSP, Figma, ... achieving attractive and functional applications.",
     "cita": "“I consider myself someone who achieves what he sets out to do, since I believe that achievements are the results of the decisions that are made“"
