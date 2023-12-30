@@ -18,7 +18,6 @@ export const ROUTES = [
   },
 ];
 
-
 export const LIST_TAGS = [
   { id: 1, title: "Java", color: "bg-[#eeb530]" },
   { id: 2, title: "Spring Boot", color: "bg-[#]" },

@@ -9,38 +9,50 @@ const i18n = getHomeDataInternational({ currentLocale })
 ---
 
 <section 
-			id="salute"
-			class="w-[100%] h-full m-auto flex flex-col gap-4 justify-center items-start align-middle 
-			transition-all duration-100 ease-in-out"
-		>
-		<div id="text">
-			<img 
-				src={memoji.src} 
-				alt="My Memoji"
-				class="w-[100px] h-[100px] relative z-50" 
-			/>
-			<p set:html={i18n.salute.title} 
-				class="text-[32px] font-termina-heavy w-auto h-auto inline-flex" />
-			<p class="text-[18px]">{ i18n.salute.subtitle }</p>
-		</div>
-		<ul 
-			id="buttons"
-			class="w-auto h-auto inline-flex gap-2 flex-1 flex-wrap justify-start items-center 
-			align-middle text-black"
-		>
-				{i18n.salute['access-buttons']?.map((button) => (
-					<li>
-						<a 
-							href={button.href} 
-							target="_blank" 
-							rel="noopener noreferrer"
-							class={`w-auto h-auto inline-flex p-2 px-8 rounded-full justify-center items-center
-							align-middle ${button.color} hover:-translate-x-1 hover:-translate-y-1 transition-all transform-gpu
-							duration-300 ease-in-out text-[14px] font-bold`}
-						>
-							<span class="pointer-events-none">{button.text}</span>
-						</a>
-					</li>
-				))}
-			</ul>
-		</section>
+	id="salute"
+	class="w-[100%] h-auto m-auto py-16 md:py-20 lg:py-26 flex flex-col gap-y-12 justify-center 
+	items-center align-middle transition-all duration-100 ease-in-out"
+>
+	<div 
+		id="text"
+		class="w-auto h-auto relative top-0 left-0 right-0 flex flex-col gap-x-2 
+		gap-y-8 justify-center items-center align-middle text-center z-10"
+	>
+		<img
+			id="my-memoji"
+			src={memoji.src} 
+			alt="My Memoji"
+			class="w-[200px] h-auto relative z-50" 
+		/>
+		<p 
+			set:html={i18n.SALUTE.TITLE}
+			class="text-7xl font-termina-heavy w-auto h-auto inline-flex" 
+		/>
+		<p class="text-3xl">
+			{ i18n.SALUTE.SUBTITLE }
+		</p>
+	</div>
+	<ul 
+		id="buttons"
+		class="w-auto h-auto inline-flex gap-2 flex-1 flex-wrap justify-center items-center 
+		align-middle text-white"
+	>
+		{i18n.SALUTE.ACCESS_BUTTONS.map((button) => (
+			<li id={button.ID}>
+				<a
+					href={button.HREF} 
+					target="_blank" 
+					rel="noopener noreferrer"
+					class={`w-auto h-auto inline-flex p-2 px-8 rounded-full justify-center items-center
+					align-middle border-2 hover:border-transparent hover:bg-accent-two hover:-translate-x-1 
+					hover:-translate-y-1 hover:text-black transition-all transform-gpu duration-300 
+					ease-in-out text-[14px] font-bold`}
+				>
+					<span class="pointer-events-none">
+						{button.TEXT}
+					</span>
+				</a>
+			</li>
+		))}
+	</ul>
+</section>
