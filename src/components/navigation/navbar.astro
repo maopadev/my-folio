@@ -1,7 +1,7 @@
 ---
 /// import HeaderLink from '../HeaderLink.astro';
 import ToggleMenuButton from './toggle.astro';
-import logo from '@images/ec22897b-bbc7-4320-18233-d083e112wc6bc.svg'
+import Logo from '@components/navigation/icon.astro';
 ---
 
 <header 
@@ -16,18 +16,17 @@ import logo from '@images/ec22897b-bbc7-4320-18233-d083e112wc6bc.svg'
 	>
 		<div 
 			id="separator" 
-			class="w-[50%] h-[7px] lg:block hidden bg-slate-700 rounded-full" 
+			class="w-[40px] h-[7px] lg:block hidden bg-slate-700/80 rounded-full" 
 		/>
-		<img 
-			id="logo"
-			src={logo.src} 
-			alt="The logo of the website"
-			class="stroke-accent-two transition-all duration-200 ease-in-out"
-		/>
+		<Logo class=" w-[80px] h-auto justify-center items-center align-middle" />
 		<div 
 			id="separator" 
-			class="w-[100%] h-[7px] bg-slate-700 rounded-full" 
+			class="w-[100%] h-[7px] bg-slate-700/80 rounded-full" 
 		/>
 		<ToggleMenuButton />
+		<div 
+			id="separator" 
+			class="w-[40px] h-[7px] lg:block hidden bg-slate-700/80 rounded-full" 
+		/>
 	</nav>
 </h>

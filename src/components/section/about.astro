@@ -11,27 +11,32 @@ let decorator = 'px-6 py-10 border-4 rounded-[18px] border-gray-600/[.50] font-m
 
 <section 
 	id="about"
-	class="w-[100%] h-auto m-auto py-16 md:py-20 lg:py-26 flex flex-col gap-y-12 justify-center 
+	class="container w-screen h-auto py-16 md:py-20 lg:py-26 relative flex flex-col gap-y-12 justify-center 
 	items-center align-middle transition-all duration-100 ease-in-out bg-transparent backdrop-blur-3xl"
 >
-	<p
-		id=""
-		class="text-[16px]"
+	<div
+		class="w-[85%] max-w-[900px] h-full mx-auto flex flex-col gap-y-20 justify-center items-center 
+		align-middle z-10"
 	>
-		{i18n.ABOUT.DESCRIPTION_JOB}
-	</p>
-	<p
-		id=""
-		class="text-[16px]"
-	>
-		{i18n.ABOUT.MY_WORKING}
-	</p>
-	<p 
-		id="cita-decorator" 
-		class="text-[16px] px-6 py-10 border-4 rounded-[18px] border-gray-600/[.50] 
-		font-medium italic hover:text-white hover:border-white hover:shadow-xl 
-		hover:-translate-x-1 hover:-translate-y-2 transition-all duration-200 ease-in-out"
-	>
-		{i18n.ABOUT.cita}
-	</p>
+		<p
+			id=""
+			class="text-[16px]"
+		>
+			{i18n.ABOUT.DESCRIPTION_JOB}
+		</p>
+		<p
+			id=""
+			class="text-[16px]"
+		>
+			{i18n.ABOUT.MY_WORKING}
+		</p>
+		<p 
+			id="cita-decorator" 
+			class="text-[16px] px-6 py-10 border-4 rounded-[18px] border-gray-600/[.50] 
+			font-medium italic hover:text-white hover:border-white hover:shadow-xl 
+			hover:-translate-x-1 hover:-translate-y-2 transition-all duration-200 ease-in-out"
+		>
+			{i18n.ABOUT.cita}
+		</p>
+	</div>
 </section>
