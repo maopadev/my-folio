@@ -1,7 +1,6 @@
 ---
 /// import HeaderLink from '../HeaderLink.astro';
 import ToggleMenuButton from './toggle.astro';
-import Logo from '@components/navigation/icon.astro';
 ---
 
 <header 
@@ -18,7 +17,14 @@ import Logo from '@components/navigation/icon.astro';
 			id="separator" 
 			class="w-[40px] h-[7px] lg:block hidden bg-slate-700/80 rounded-full" 
 		/>
-		<Logo class=" w-[80px] h-auto justify-center items-center align-middle" />
+		<a 
+			id="page-name"
+			class="w-auto h-auto font-bold text-slate-500 hover:underline hover:underline-slate-400 transform 
+			transition-all duration-200 ease-in-out"
+			href="/"
+		>
+			maopadev
+		</a>
 		<div 
 			id="separator" 
 			class="w-[100%] h-[7px] bg-slate-700/80 rounded-full" 
