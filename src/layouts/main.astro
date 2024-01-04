@@ -1,7 +1,4 @@
 ---
-
-import Logo from '@components/logo.astro';
-
 /// Components Reactives
 import Navbar from '@components/navigation/navbar.astro';
 import BaseHead from '@components/base.astro';
@@ -30,18 +27,14 @@ const { title, description } = Astro.props;
 	<body 
 		class="relative w-screen min-h-screen overflow-x-hidden bg-[#080808] justify-center items-center 
 		align-middle transition-all duration-100 ease-in-out"
-	>	<!-- Navbar with Responsive Toggle -->
+	>	
+		<!-- Navbar with Responsive Toggle -->
         <Navbar />
-		<!-- Background Logo -->
-		<Logo
-			id="logo-background"
-			class="w-[100%] h-auto absolute -top-32 left-0 right-0 justify-center items-center -z-10 stroke-black/25 stroke-[120px] backdrop-blur-2xl" 
-		/>
 		<main 
 			id="container"
-			class="w-[85%] max-w-[900px] h-auto flex flex-col relative top-36 left-0 right-0 flex-grow mx-auto 
-			gap-y-16 md:gap-y-20 lg:gap-y-26 justify-center items-center align-middle transition-all 
-			duration-100 ease-in-out text-white"
+			class="w-full lg:w-[85%] max-w-[900px] h-auto flex flex-col relative top-16 md:top-18 left-0 right-0 
+			flex-grow mx-auto px-4 gap-y-16 md:gap-y-20 lg:gap-y-26 justify-center items-center align-middle 
+			transition-all duration-100 ease-in-out text-white"
 		>
         	<slot />
 		</main>

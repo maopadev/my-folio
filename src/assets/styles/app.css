@@ -12,13 +12,13 @@
 @font-face {
   font-family: "Termina Heavy";
   src: local("Termina Heavy"), local("termina heavy"), local("termina-heavy"),
-    local("Termina-Heavy"), url("../fonts/spartan-variable.ttf");
+    local("Termina-Heavy"), url("../fonts/termina/heavy.otf");
 }
 
 @font-face {
   font-family: "Termina Bold";
   src: local("Termina Bold"), local("termina bold"), local("termina-bold"),
-    local("Termina-Bold"), url("../fonts/spartan-variable.ttf");
+    local("Termina-Bold"), url("../fonts/termina/bold.otf");
 }
 
 :root {

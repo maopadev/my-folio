@@ -4,7 +4,7 @@ import MainLayout from '@layouts/main.astro'
 
 /// Sections
 import SaluteSection from '@components/section/salute.astro'
-import AboutSection from '@components/section/about.astro'
+import ContactSection from '@components/section/contact.astro'
 import ProjectsSection from '@components/section/projects.astro'
 import SkillsSection from '@components/section/skills.astro'
 
@@ -16,7 +16,7 @@ const i18n = getHomeDataInternational({ currentLocale })
 ---
 <MainLayout title={i18n.TITLE}>
 		<SaluteSection />
-		<AboutSection />
 		<ProjectsSection />
 		<SkillsSection />
+		<ContactSection />
 </MainLayout>

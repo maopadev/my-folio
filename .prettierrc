@@ -1,9 +1,24 @@
 {
+  "printWidth": 120,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": false,
+  "quoteProps": "as-needed",
+  "jsxSingleQuote": false,
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
+  "arrowParens": "always",
+  "rangeStart": 0,
+  "requirePragma": false,
+  "insertPragma": false,
+  "proseWrap": "preserve",
+  "endOfLine": "auto",
   "overrides": [
     {
-      "files": "*.astro",
+      "files": "*.json, *.astro",
       "options": {
-        "parser": "astro"
+        "printWidth": 120
       }
     }
   ]
