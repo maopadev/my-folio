@@ -1,8 +1,13 @@
 {
-  "TITLE": "Bem-vindo ao meu porfolio!",
+  "TITLE": "maopa - Porfolio",
   "SALUTE": {
-    "TITLE": "Mario Aqui!",
-    "SUBTITLE": "Full Stack Developer que gosta de resolver problemas! ❤️",
+    "TITLE_ONE": "Mario",
+    "TITLE_TWO": "Aqui",
+    "ABOUT": [
+      "Trabalhando atualmente de Full Stack Developer, encantado de resolver problemas   ❤️",
+      "Sempre tento dar uma abordagem minimalista, criando sites com um design simples e claro. Também adoro redesenhar sites existentes.",
+      "“Me considero uma pessoa que consegue o que se propõe, pois acredito que as conquistas são os resultados das decisões tomadas“"
+    ],
     "ACCESS_BUTTONS": [
       {
         "ID": 1,
@@ -17,11 +22,6 @@
         "COLOR": "bg-accent-two"
       }
     ]
-  },
-  "ABOUT": {
-    "DESCRIPTION_JOB": "Atualmente estou na SearchIT criando e mantendo aplicações web para diferentes clientes em colaboração com esta empresa.",
-    "MY_WORKING": "Gosto de criar aplicações cativantes e visualmente impactantes usando ferramentas de desenvolvimento como React, Astro, Java, JSP, Figma, ... conseguindo aplicações atraentes e funcionais.",
-    "cita": "“Me considero alguém que alcança o que se propõe a fazer, pois acredito que as conquistas são resultados das decisões que são tomadas“"
   },
   "projects": {
     "title": "Projetos",

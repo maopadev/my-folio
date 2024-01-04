@@ -9,6 +9,8 @@ import Logo from '@components/logo.astro'
 import { getHomeDataInternational } from "@i18n/index.ts"
 const { currentLocale } = Astro
 const i18n = getHomeDataInternational({ currentLocale })
+
+import { CHAR_EXCLAIM } from '@hooks/consts.ts'
 ---
 
 <section 
@@ -40,7 +42,7 @@ const i18n = getHomeDataInternational({ currentLocale })
 				<h1>{ i18n.SALUTE.TITLE_ONE }</h1>
 				<h1>
 					{ i18n.SALUTE.TITLE_TWO }
-					{ }
+					<span>{ CHAR_EXCLAIM }</span>
 				</h1>
 				<Logo class="absolute flex flex-wrap w-[90%] h-[180px] left-0 right-0 p-1 -z-10 stroke-slate-500/40 stroke-[40] backdrop-blur-3xl"/>
 			</div>
