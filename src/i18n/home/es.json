@@ -23,8 +23,8 @@
       }
     ]
   },
-  "projects": {
-    "title": "Proyectos",
+  "PROJECTS": {
+    "TITLE": "Explora mis proyectos",
     "projects": [
       {
         "id": 1,

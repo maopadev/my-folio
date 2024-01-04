@@ -1,17 +1,30 @@
 ---
+
+/// i18N Imports
+import { getHomeDataInternational } from "@i18n/index.ts"
+const { currentLocale } = Astro
+const i18n = getHomeDataInternational({ currentLocale })
 ---
 
 <section 
-	id="about"
-	class="container w-screen h-auto py-16 md:py-20 lg:py-26 relative flex flex-col gap-y-12 justify-center 
-	items-center align-middle transition-all duration-100 ease-in-out bg-transparent backdrop-blur-3xl"
+	id="projects"
+	class="w-[100%] h-auto m-auto py-4 flex flex-col gap-y-24 justify-center 
+	items-center align-middle uppercase overflow-x-hidden transition-all duration-100 ease-in-out"
 >
-	<div
-		class="w-[85%] max-w-[900px] h-auto mx-auto flex flex-col gap-y-18 justify-center items-center 
-		align-middle z-10"
-	>
-		<header class="text-[22px] font-termina-bold text-start font-black uppercase">
-			Projects
-		</header>
-	</div>
+	<header class="relative flex overflow-x-hidden">
+		<text class="py-12 animate-marquee whitespace-nowrap">
+			<span class="text-[44px] font-bold text-slate-500/60 mx-4">{ i18n.PROJECTS.TITLE } ///</span>
+			<span class="text-[44px] font-bold text-slate-500/60 mx-4">{ i18n.PROJECTS.TITLE } ///</span>
+			<span class="text-[44px] font-bold text-slate-500/60 mx-4">{ i18n.PROJECTS.TITLE } ///</span>
+			<span class="text-[44px] font-bold text-slate-500/60 mx-4">{ i18n.PROJECTS.TITLE } ///</span>
+			<span class="text-[44px] font-bold text-slate-500/60 mx-4">{ i18n.PROJECTS.TITLE } ///</span>
+		</text>
+		<text class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
+			<span class="text-[44px] font-bold text-slate-500/60 mx-4">{ i18n.PROJECTS.TITLE } ///</span>
+			<span class="text-[44px] font-bold text-slate-500/60 mx-4">{ i18n.PROJECTS.TITLE } ///</span>
+			<span class="text-[44px] font-bold text-slate-500/60 mx-4">{ i18n.PROJECTS.TITLE } ///</span>
+			<span class="text-[44px] font-bold text-slate-500/60 mx-4">{ i18n.PROJECTS.TITLE } ///</span>
+			<span class="text-[44px] font-bold text-slate-500/60 mx-4">{ i18n.PROJECTS.TITLE } ///</span>
+		</t>
+  	</header>
 </section>
