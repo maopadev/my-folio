@@ -6,8 +6,8 @@ export default {
   darkMode: "class",
   theme: {
     fontFamily: {
-      "termina-heavy": ["Termina Heavy", "sans-serif"],
-      "termina-bold": ["Termina Bold", "sans-serif"],
+      "roxborough-medium": ["Roxborough Medium", "sans-serif"],
+      "roxborough-bold": ["Roxborough Bold", "sans-serif"],
       bricolage: ["Bricolage Grotesque", "sans-serif"],
     },
     extend: {

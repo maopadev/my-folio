@@ -1,0 +1,187 @@
+---
+/// Images Imports
+import memoji from '@images/ec22897b-bbc7-4320-8822-d082d353c6bc1a.svg'
+
+/// Components Imports
+import Logo from '@components/items/logo.astro'
+
+/// i18N Imports
+import { getHomeDataInternational } from "@i18n/index.ts"
+const { currentLocale } = Astro
+const { SALUTE } = getHomeDataInternational({ currentLocale })
+
+import { CHAR_EXCLAIM } from '@hooks/consts.ts'
+---
+
+<section 
+	id="salute"
+	class="container w-full h-auto flex flex-col gap-2 m-auto py-12 justify-center items-center align-middle
+	transition-all duration-100 ease-in-out"
+>
+	<div
+		id="image"
+		class="w-full h-full flex flex-col m-auto rounded-xl
+		justify-center items-center align-middle text-center gap-y-2 z-10 col-span-5"
+	>
+		<img
+			id="my-memoji"
+			src={memoji.src}
+			alt="My Memoji"
+			class="w-[200px] h-auto relative z-50" 
+		/>
+	</div>
+	<div
+		id="text"
+		class="w-full h-full flex flex-col m-auto rounded-xl py-2
+		justify-center items-center align-middle text-center z-10 col-span-5"
+	>
+		<h1 
+			class="text-[62px] md:text-[68px] lg:text-[82px] font-roxborough-bold font-black 
+			w-auto h-auto flex flex-col justify-center items-center align-middle leading-[1.0] 
+			transition-all duration-200 ease-in-out"
+		>
+			{ SALUTE.TITLE_ONE }
+		</h1>
+		<h1
+			class="text-[62px] md:text-[68px] lg:text-[82px] font-bricolage font-black
+			inline-flex justify-center items-center align-middle leading-[1.0]"
+		>
+			{ SALUTE.TITLE_TWO }{ CHAR_EXCLAIM }
+		</h1>
+	</div>
+	<div 
+		id="github"
+		class="w-full h-full bg-orange-500/30 flex flex-col m-auto rounded-xl p-2 px-12
+		justify-center items-start align-middle text-center gap-y-2 z-10 col-span-1 lg:col-span-2"
+	>
+		Github
+	</div>
+	<div 
+		id="threads"
+		class="w-full h-full bg-orange-500/30 flex flex-col m-auto rounded-xl p-2 px-12
+		justify-center items-start align-middle text-center gap-y-2 z-10 col-span-1 lg:col-span-2"
+	>
+		Threads
+	</div>
+	<div 
+		id="behance"
+		class="w-full h-full bg-orange-500/30 flex flex-col m-auto rounded-xl p-2 px-12
+		justify-center items-start align-middle text-center gap-y-2 z-10 col-span-1 lg:col-span-2"
+	>
+		Behance
+	</div>
+	<div 
+		id="text"
+		class="w-full h-full bg-green-500/30 flex flex-col m-auto rounded-xl
+		justeafy-center items-start align-middle text-center gap-y-2 z-10 col-span-5 lg:col-span-3"
+	>
+		<h1 
+			Gitss="text-[52px] md:text-[64px] lg:text-[72px] font-roxborough-bold font-black 
+			w-auto h-auto flex flex-col justify-center items-start align-middle leading-[1.0] 
+			transition-all duration-200 ease-in-out"
+		>
+			{ SALUTE.TITLE_ONE }
+		</h1>
+		<h1
+			class="text-[52px] md:text-[64px] lg:text-[72px] font-bricolage font-black
+			inline-flex justify-center items-end align-middle leading-[1.0]"
+		>
+			{ SALUTE.TITLE_TWO }
+			<span>{ CHAR_EXCLAIM }</span>
+		</h1>
+	</div>
+	<div 
+		id="text"
+		class="w-full h-full bg-blue-500/30 flex flex-col m-auto rounded-xl
+		justify-center items-start align-middle text-center gap-y-2 z-10 col-span-5 lg:col-span-2"
+	>
+		<h1 
+			class="text-[52px] md:text-[64px] lg:text-[72px] font-roxborough-bold font-black 
+			w-auto h-auto flex flex-col justify-center items-start align-middle leading-[1.0] 
+			transition-all duration-200 ease-in-out"
+		>
+			{ SALUTE.TITLE_ONE }
+		</h1>
+		<h1
+			class="text-[52px] md:text-[64px] lg:text-[72px] font-bricolage font-black
+			inline-flex justify-center items-end align-middle leading-[1.0]"
+		>
+			{ SALUTE.TITLE_TWO }
+			<span>{ CHAR_EXCLAIM }</span>
+		</h1>
+	</div>
+</section>
+lenlin
+<!--<section 
+	id="salute"
+	class="w-[100%] h-auto m-auto py-10 md:py-14 lg:py-18 flex flex-col gap-y-24 justify-center 
+	items-center align-middle transition-all duration-100 ease-in-out"
+>
+	<div 
+		id="text"
+		class="w-auto h-auto relative top-0 left-0 right-0 flex flex-col
+		justify-center items-center align-middle text-center gap-y-20 z-10"
+	>
+		<div 
+			id="title"
+			ctrs="w-auto h-auto flex flex-col gap-y-4 justify-center items-center align-middle z-0"
+		>
+			<img
+				id="my-memoji"
+				src={memoji.src}
+				alt="My Memoji"
+				class="w-[200px] h-auto relative z-50" 
+			/>
+			<div
+				id="title"
+				class="container box-border text-[52px] md:text-[64px] lg:text-[72px] font-termina-heavy font-black 
+				w-auto h-auto flex flex-col justify-center items-center align-middle leading-[1.0] 
+				transition-all duration-200 ease-in-out" 
+			>
+				<h1>{ i18n.SALUTE.TITLE_ONE }</h1>
+				<h1>
+					{ i18n.SALUTE.TITLE_TWO }
+					<span>{ CHAR_EXCLAIM }</span>
+				</h1>
+				<Logo class="absolute flex flex-wrap w-[90%] h-[180px] left-0 right-0 p-1 -z-10 stroke-slate-500/40 stroke-[40] backdrop-blur-3xl"/>
+			</div>
+		</div>
+		<div 
+			id="about"
+			class="w-auto h-auto flex flex-col gap-y-10 justify-center items-center align-middle z-0"
+		>
+			{i18n.SALUTE.ABOUT.map((text: string, index: number) => (
+				<p 
+					id={`about-${index}`}
+					class={`text-[18px] text-justify uppercase font-normal w-auto lg:w-[85%] h-auto justify-center items-start align-middle z-0
+					${index === i18n.SALUTE.ABOUT.length - 1 ? 'text-[#FEC400] text-end font-semibold' : 'text-white text-justify'}`}
+				>
+					{ text }
+				</p>
+			))}
+		</div>
+	</div>
+	<ul
+		id="buttons"
+		class="w-auto h-auto inline-flex gap-2 flex-1 flex-wrap justify-center items-center 
+		align-middle text-white"
+	>
+		{i18n.SALUTE.ACCESS_BUTTONS.map((button) => (
+			<li id={`button-${button.ID}`}>
+				<a
+					href={button.HREF} 
+					target="_blank" 
+					rel="noopener noreferrer"
+					class={`w-auto h-auto inline-flex p-2 px-8 rounded-full justify-center items-center
+					align-middle border-2 hover:border-transparent hover:bg-accent-two hover:-translate-x-1 
+					hover:-translate-y-1 hover:text-black transition-all transform-gpu duration-300 
+					ease-in-out text-[14px] font-bold`}
+				>
+					<span class="pointer-events-none">
+						{button.TEXT}
+					</span>
+				</a>
+			</li>
+		))}
+	</ul>
+</section>-->
