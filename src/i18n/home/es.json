@@ -25,13 +25,14 @@
   },
   "PROJECTS": {
     "TITLE": "Explora mis proyectos",
-    "projects": [
+    "ITEMS": [
       {
         "id": 1,
-        "title": "Proyecto 1",
+        "title": "BurnFit",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
-        "image": "https://picsum.photos/200/300",
-        "href": ""
+        "image": "/src/assets/images/running.webp",
+        "repository": "",
+        "tags": [52, 53, 49, 36, 48]
       },
       {
         "id": 2,

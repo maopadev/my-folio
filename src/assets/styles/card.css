@@ -1,0 +1,41 @@
+:root {
+	--color: #b39e79;
+	--color-2: #b39e7925;
+	--color-3: #ffffff15;
+}
+
+.frame {
+	margin: 1rem;
+	width: 22rem;
+	aspect-ratio: 10/14;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	position: relative;
+}
+
+.glass {
+	background: linear-gradient(
+		90deg,
+		transparent,
+		transparent 0.75rem,
+		var(--color-3) 2rem
+	);
+	background-size: 2.5rem 100%;
+	height: 100%;
+	width: 80%;
+	backdrop-filter: blur(.65rem);
+	filter: contrast(1.35);
+	position: absolute;
+	z-index: 49;
+	inset: 0;
+}
+
+.image {
+	background-image: ("/src/assets/images/running.webp");
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	filter: sepia(20%) hue-rotate(10deg);
+	opacity: 0.7;
+}

@@ -50,10 +50,12 @@ export const LIST_TAGS = [
   { id: 39, title: "Junit", color: "bg-[#]" },
   { id: 40, title: "Mockito", color: "bg-[#]" },
   { id: 47, title: "Eclipse", color: "bg-[#]" },
-  { id: 48, title: "Mantenimiento de Base de Datos", color: "bg-[#]" },
+  { id: 48, title: "Firebase", color: "bg-[#]" },
   { id: 49, title: "REST", color: "bg-[#]" },
   { id: 50, title: "SOAP", color: "bg-[#]" },
   { id: 51, title: "Subversion", color: "bg-[#]" },
+  { id: 52, title: "Kotlin", color: "bg-[#]" },
+  { id: 53, title: "Android", color: "bg-[#]" },
 ];
 
 export const CHAR_EXCLAIM = "!"

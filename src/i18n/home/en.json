@@ -23,9 +23,9 @@
       }
     ]
   },
-  "projects": {
-    "title": "Projects",
-    "projects": [
+  "PROJECTS": {
+    "title": "PROJECTS",
+    "ITEMS": [
       {
         "id": 1,
         "title": "Project 1",

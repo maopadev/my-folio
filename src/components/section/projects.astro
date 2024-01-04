@@ -1,5 +1,8 @@
 ---
 
+/// Components Imports
+import RepositoryCard from "@components/items/card.repository.astro"
+
 /// i18N Imports
 import { getHomeDataInternational } from "@i18n/index.ts"
 const { currentLocale } = Astro
@@ -11,7 +14,10 @@ const i18n = getHomeDataInternational({ currentLocale })
 	class="w-[100%] h-auto m-auto py-4 flex flex-col gap-y-24 justify-center 
 	items-center align-middle uppercase overflow-x-hidden transition-all duration-100 ease-in-out"
 >
-	<header class="relative flex overflow-x-hidden">
+	<header 
+		id="marquee" 
+		class="relative flex overflow-x-hidden"
+	>
 		<text class="py-12 animate-marquee whitespace-nowrap">
 			<span class="text-[44px] font-bold text-slate-500/60 mx-4">{ i18n.PROJECTS.TITLE } ///</span>
 			<span class="text-[44px] font-bold text-slate-500/60 mx-4">{ i18n.PROJECTS.TITLE } ///</span>
@@ -27,4 +33,18 @@ const i18n = getHomeDataInternational({ currentLocale })
 			<span class="text-[44px] font-bold text-slate-500/60 mx-4">{ i18n.PROJECTS.TITLE } ///</span>
 		</t>
   	</header>
+	<ul 
+		id="list-works"
+		class="w-auto h-auto grid grid-cols-3 gap-x-12 justify-center items-center align-middle"
+	>
+		{ i18n.PROJECTS.ITEMS.map((item: any) => (
+			<li id="item">
+				<RepositoryCard 
+					image={item.image} 
+					title={item.title}
+					tags={item.tags}
+				/>
+			</li>
+		))}
+	</ul>
 </section>
