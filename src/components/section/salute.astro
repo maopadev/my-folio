@@ -2,20 +2,18 @@
 /// Images Imports
 import memoji from '@images/ec22897b-bbc7-4320-8822-d082d353c6bc1a.svg'
 
+/// Components Imports
+import Logo from '@components/logo.astro'
+
 /// i18N Imports
 import { getHomeDataInternational } from "@i18n/index.ts"
 const { currentLocale } = Astro
 const i18n = getHomeDataInternational({ currentLocale })
-
-let text = i18n.SALUTE.ABOUT
-text.map((text: string, index: number) => {
-	console.log(index, text)
-})
 ---
 
 <section 
 	id="salute"
-	class="w-[100%] h-auto m-auto py-16 md:py-20 lg:py-26 flex flex-col gap-y-12 justify-center 
+	class="w-[100%] h-auto m-auto py-16 md:py-20 lg:py-26 flex flex-col gap-y-24 justify-center 
 	items-center align-middle transition-all duration-100 ease-in-out"
 >
 	<div 
@@ -35,14 +33,16 @@ text.map((text: string, index: number) => {
 			/>
 			<div
 				id="title"
-				class="text-[44px] md:text-[64px] lg:text-[72px] font-termina-heavy font-black uppercase 
-				w-auto h-auto flex flex-col leading-[1.1] transition-all duration-200 ease-in-out" 
+				class="container box-border text-[52px] md:text-[64px] lg:text-[72px] font-termina-heavy font-black 
+				w-auto h-auto flex flex-col justify-center items-center align-middle leading-[1.0] 
+				transition-all duration-200 ease-in-out" 
 			>
 				<h1>{ i18n.SALUTE.TITLE_ONE }</h1>
 				<h1>
 					{ i18n.SALUTE.TITLE_TWO }
 					{ }
 				</h1>
+				<Logo class="absolute flex flex-wrap w-[90%] h-[180px] left-0 right-0 p-1 -z-10 stroke-slate-500/40 stroke-[40] backdrop-blur-3xl"/>
 			</div>
 		</div>
 		<div 
@@ -52,15 +52,15 @@ text.map((text: string, index: number) => {
 			{i18n.SALUTE.ABOUT.map((text: string, index: number) => (
 				<p 
 					id={`about-${index}`}
-					class={`text-[18px] text-justify uppercase h-auto justify-center items-center align-middle z-0
-					${index === i18n.SALUTE.ABOUT.length - 1 ? 'text-amber-400 text-end' : 'text-white text-justify'}`}
+					class={`text-[18px] text-justify uppercase font-normal w-auto lg:w-[85%] h-auto justify-center items-start align-middle z-0
+					${index === i18n.SALUTE.ABOUT.length - 1 ? 'text-[#FEC400] text-end font-semibold' : 'text-white text-justify'}`}
 				>
 					{ text }
 				</p>
 			))}
 		</div>
 	</div>
-	<ul 
+	<ul
 		id="buttons"
 		class="w-auto h-auto inline-flex gap-2 flex-1 flex-wrap justify-center items-center 
 		align-middle text-white"

@@ -56,21 +56,4 @@ export const LIST_TAGS = [
   { id: 51, title: "Subversion", color: "bg-[#]" },
 ];
 
-export const LIST_EXPERENCIES = [
-  {
-    id: 2,
-    job: "Full Stack Developer",
-    description: "",
-    company: ["SearchIT", ``],
-    period: [202112, "Present"],
-    tags: [1, 28, 39, 2, 29, 30, 31, 16, 3, 4, 37, 38, 35, 34, 50, 49, 51, 20],
-  },
-  {
-    id: 1,
-    job: "Junior Java Developer",
-    description: "",
-    company: ["Minsait", ``],
-    period: [201910, 202111],
-    tags: [1, 28, 2, 29, 30, 31, 32, 33],
-  },
-];
+export const CHAR_EXCLAIM = "!"
