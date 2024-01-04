@@ -24,25 +24,26 @@
     ]
   },
   "PROJECTS": {
-    "title": "PROJECTS",
+    "TITLE": "Explore my Work",
     "ITEMS": [
       {
         "id": 1,
-        "title": "Project 1",
+        "title": "BurnFit",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
-        "image": "https://picsum.photos/200/300",
-        "href": ""
+        "image": "/src/assets/images/running.webp",
+        "repository": "",
+        "tags": [52, 53, 49, 36, 48]
       },
       {
         "id": 2,
-        "title": "Project 2",
+        "title": "Proyecto 2",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
         "image": "https://picsum.photos/200/300",
         "href": ""
       },
       {
         "id": 3,
-        "title": "Project 3",
+        "title": "Proyecto 3",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
         "image": "https://picsum.photos/200/300",
         "href": ""
