@@ -28,7 +28,10 @@ const filteredTags = LIST_TAGS.filter((tag) => tags?.includes(tag.id))?.sort((a,
     </h1>
     <ul class="inline-flex flex-wrap w-full gap-2 justify-start items-center align-middle">
       {filteredTags?.map((tag) => (
-        <li class="flex capitalize text-sm font-bricolage p-[0.5px] px-2 border rounded-xl font-semibold">
+        <li 
+          id={`item-${tag.id}`} 
+          class="flex capitalize text-sm font-bricolage p-[0.5px] px-2 border rounded-xl font-semibold"
+        >
           {tag.title}
         </li>
       ))}
