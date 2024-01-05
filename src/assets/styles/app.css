@@ -12,7 +12,7 @@
 @font-face {
   font-family: "Roxborough Medium";
   src: local("Roxborough Medium"), local("roxborough Medium"), local("roxborough-Medium"),
-    local("Roxborough-Medium"), url("../fonts/roxborough/Medium.otf");
+    local("Roxborough-Medium"), url("../fonts/roxborough/medium.otf");
 }
 
 @font-face {

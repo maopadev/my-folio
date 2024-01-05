@@ -2,8 +2,8 @@
 export default {
   content: ["./src/**/*.{astro,md,mdx,ts,tsx}"],
   enabled: process.env.NODE_ENV === "production",
-  safeList: [],
   darkMode: "class",
+  safeList: [],
   theme: {
     fontFamily: {
       "roxborough-medium": ["Roxborough Medium", "sans-serif"],
