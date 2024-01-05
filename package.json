@@ -14,15 +14,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.0.7"
+    "astro": "4.1.0"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.3.3",
-    "@astrojs/mdx": "^2.0.2",
+    "@astrojs/check": "0.3.4",
+    "@astrojs/mdx": "2.0.3",
     "@astrojs/prefetch": "^0.4.1",
     "@astrojs/rss": "^4.0.1",
-    "@astrojs/sitemap": "^3.0.3",
-    "@astrojs/tailwind": "^5.0.4",
+    "@astrojs/sitemap": "3.0.4",
+    "@astrojs/tailwind": "5.1.0",
     "@typescript-eslint/parser": "^6.17.0",
     "autoprefixer": "^10.4.16",
     "cssnano": "^6.0.2",
