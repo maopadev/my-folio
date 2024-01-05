@@ -10,50 +10,44 @@ import { getHomeDataInternational } from "@i18n/index.ts"
 const { currentLocale } = Astro
 const { SALUTE } = getHomeDataInternational({ currentLocale })
 
-import { CHAR_EXCLAIM } from '@hooks/consts.ts'
-
 // Get the current year
 let year = new Date().getFullYear()
 ---
 
 <section 
 	id="salute"
-	class="w-full h-auto flex mx-auto justify-center items-center align-middle
-	 rounded-b-[32px] bg-slate-700/30 backdrop-blur-xl transition-all duration-100 ease-in-out"
+	class="w-full h-auto flex mx-auto justify-center items-center align-middle rounded-b-[48px] bg-slate-50 dark:bg-slate-700/30 text-black dark:text-white backdrop-blur-xl transition-all duration-100 ease-in-out"
 >
 	<div 
 		id="content" 
-		class="w-[85%] max-w-screen-lg flex flex-col h-auto mx-auto py-20 md:py-24 lg:py-28 justify-center 
-		items-center align-middle gap-y-12"
+		class="w-[85%] max-w-screen-lg flex flex-col h-auto mx-auto py-20 md:py-24 lg:py-28 justify-center items-center align-middle gap-y-12"
 	>
 		<div
 			id="text"
-			class="w-full h-auto flex flex-col m-auto py-2
-			justify-center items-center align-middle text-center z-10"
+			class="w-full h-auto flex flex-col m-auto py-2 justify-center items-center align-middle text-center z-10"
 		>
 			<h1 
-				class="text-[94px] md:text-[110px] lg:text-[132px] font-roxborough-bold text-start
-				w-full h-auto flex flex-col justify-start items-start align-middle leading-[1.0] 
-				transition-all duration-200 ease-in-out"
+				class="text-[84px] md:text-[98px] lg:text-[115px] font-bricolage text-center italic w-full h-auto flex justify-center items-center align-middle transition-all duration-200 ease-in-out"
 			>
-				{ SALUTE.TITLE_ONE }
-			</h1>
-			<h1
-				class="text-[62px] md:text-[68px] lg:text-[82px] font-bricolage font-bold
-				inline-flex text-end justify-end items-center align-middle leading-[1.0] text-slate-400/60"
-			>
-				{ SALUTE.TITLE_TWO }{ CHAR_EXCLAIM }
+				<strong class="font-black">
+					{ SALUTE.TITLE_ONE[0] }
+				</strong>
+				{ SALUTE.TITLE_ONE[1] }
 			</h1>
 		</div>
-		<div 
-			id="text"
-			class="w-full h-full flex flex-col m-auto rounded-xl
-			justify-center items-center align-middle text-center gap-y-2 z-10"
+		<ul 
+			id="tags"
+			class="w-full h-full inline-flex m-auto rounded-xl justify-between items-center align-middle text-center gap-y-2 z-10"
 		>
-			<h1 class="text-[18px] lg:text-[24px] font-semibold text-center">
-				{ SALUTE.DESCRIPTION }
-			</h1>
-		</div>
+			{ Array.from(SALUTE.TAGS_PERSONAL).map((tag, index) => (
+				<li 
+					id={`tag-persona-${index}`}
+					class="text-[18px] font-medium text-center"
+				>
+					{ tag }
+				</li>
+			))}
+		</ul>
 		<ul
 			id="grid-links"
 			class="w-full h-full grid grid-cols-4 auto-rows-auto auto-cols-auto gap-x-1 gap-y-4 justify-between items-center align-middle z-10"
@@ -61,14 +55,13 @@ let year = new Date().getFullYear()
 			<ButtonGlassLink title="Github" number={1} link="https://github.com/maopadev" />
 			<ButtonGlassLink title="Threads" number={2} link="" />
 			<ButtonGlassLink title="Behance" number={3} link="" />
-			<p class="hidden lg:flex relative text-xl font-semibold text-accent-one h-full justify-end items-end bottom-4">
-				&copy;{year}
-			</p>
 		</ul>
-		<div 
-			id="text"
-			class="w-full h-full flex lg:hidden flex-col m-auto rounded-xl
-			justify-center items-center align-middle text-center gap-y-2 z-10 col-span-5 lg:col-span-2"
+		<div>
+
+		</div>
+		<div
+			id="year"
+			class="w-full h-full flex flex-col m-auto rounded-xl justify-center items-center align-middle text-center gap-y-2 z-10 col-span-5 lg:col-span-2"
 		>
 			<p class="text-[18px] font-medium text-center">
 				&copy;{ year }
@@ -77,11 +70,10 @@ let year = new Date().getFullYear()
 	</div>
 	<div 
 		id="background"
-		class="w-[180%] h-full absolute flex overflow-hidden -pt-12 md:-pt-24 lg:-pt-32 left-0 right-0 bg-cover bg-no-repeat 
-		justify-center items-center align-middle -z-10"
+		class="w-full h-full absolute flex overflow-hidden -pt-12 md:-pt-24 lg:-pt-32 left-0 right-0 bg-cover bg-no-repeat rounded-b-3xl justify-center items-center align-middle -z-10"
 	>
 		<Background
-			class="w-full h-auto stroke-[#080808] stroke-[120]" 
+			class="w-full h-auto stroke-[#FCFABC] dark:stroke-[#080808] stroke-[120]" 
 		/>
 	</div>
 </section>

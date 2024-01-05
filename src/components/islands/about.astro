@@ -4,13 +4,13 @@ import { getHomeDataInternational } from "@i18n/index.ts"
 
 // Get locale selected
 const { currentLocale } = Astro
-const { SALUTE } = getHomeDataInternational({ currentLocale })
+const { ABOUT } = getHomeDataInternational({ currentLocale })
 ---
 
 <section 
 	id="about"
 	class="container w-screen h-auto py-10 md:py-14 lg:py-18 relative flex flex-col gap-y-12 justify-center 
-	items-center align-middle transition-all duration-100 ease-in-out bg-transparent backdrop-blur-3xl"
+	items-center align-middle transition-all duration-200 ease-in-out transform-gpu text-black dark:text-white"
 >
 	<div
 		class="w-[90%] max-w-screen-xl h-auto mx-auto flex flex-col gap-y-20 justify-center items-center 
@@ -25,16 +25,10 @@ const { SALUTE } = getHomeDataInternational({ currentLocale })
 				id="about"
 				class="w-auto h-auto flex flex-col gap-y-14 justify-center items-center align-middle z-0"
 			>
-				{SALUTE.ABOUT.map((text: string, index: number) => (
-					<p 
-						id={`about-${index}`}
-						class={`text-[20px]  text-justify uppercase font-normal w-auto lg:w-[85%] h-auto justify-center items-start align-middle z-0
-						${index === SALUTE.ABOUT.length - 1 
-							? 'text-[#FEC400] w-[50%] font-roxborough-bold capitalize text-end font-semibold' 
-							: 'text-white text-justify'}
-						`}
-					>
-						{ text }
+				{ ABOUT.TEXT.map((text: string[], index: number) => (
+					<p class="w-[85%] h-auto text-[18px] md:text-[20px] lg:text-[22px] text-center justity-center 
+						items-center align-middle uppercase font-semibold" id={`${index}`}>
+						{text}
 					</p>
 				))}
 			</div>
@@ -44,7 +38,7 @@ const { SALUTE } = getHomeDataInternational({ currentLocale })
 			class="w-auto h-auto inline-flex gap-2 flex-1 flex-wrap justify-center items-center 
 			align-middle text-white"
 		>
-			{SALUTE.ACCESS_BUTTONS.map((button: any) => (
+			{ABOUT.DOWNLOAD_BUTTONS.map((button: any) => (
 				<li id={`button-${button.ID}`}>
 					<a
 						href={button.HREF} 

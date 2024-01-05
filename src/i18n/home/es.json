@@ -1,70 +1,89 @@
 {
-    "TITLE": "maopa > porfolio",
-    "SALUTE": {
-        "TITLE_ONE": "maopa.dev",
-        "TITLE_TWO": "Full Stack Developer & Freelance",
-        "DESCRIPTION": "Encantado de resolver problemas  ❤️",
-        "ABOUT": [
-            "Trabajando actualmente de Full Stack Developer, encantado de resolver problemas   ❤️",
-            "Siempre trato de dar un enfoque minimalista, creando sitios web con un diseño simple y claro. También me encanta realizar rediseño de webs existentes.",
-            "“Me considero una persona que consigue lo que se propone, ya que creo que los logros son los resultados de las decisiones que se toman“"
-        ],
-        "ACCESS_BUTTONS": [
-            {
-                "ID": 1,
-                "TEXT": "Descargar CV",
-                "HREF": "",
-                "COLOR": "#A5FFC9"
-            },
-            {
-                "ID": 2,
-                "TEXT": "AA",
-                "HREF": "",
-                "COLOR": "#FCFABC"
-            }
-        ]
-    },
-    "PROJECTS": {
-        "TITLE": "Explora mis proyectos",
-        "ITEMS": [
-            {
-                "id": 1,
-                "title": "BurnFit",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
-                "image": "/src/assets/images/running.webp",
-                "repository": "",
-                "tags": [
-                    52,
-                    53,
-                    49,
-                    36,
-                    48
-                ]
-            },
-            {
-                "id": 2,
-                "title": "Proyecto 2",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
-                "image": "https://picsum.photos/200/300",
-                "href": ""
-            },
-            {
-                "id": 3,
-                "title": "Proyecto 3",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
-                "image": "https://picsum.photos/200/300",
-                "href": ""
-            }
-        ]
-    },
-    "contact": {
-        "title": "Contacto",
+  "TITLE": "maopadev",
+  "SALUTE": {
+    "TITLE_ONE": ["maopa", "dev"],
+    "TAGS_PERSONAL": ["Programador Web", "Freelance", "/1998"],
+    "SOCIAL_LINKS": [
+      {
+        "ID": 1,
+        "HREF": "https://github.com/maopadev",
+        "TITLE": "Github"
+      },
+      {
+        "ID": 2,
+        "HREF": "https://threads.com/@maopadev",
+        "TITLE": "Threads"
+      },
+      {
+        "ID": 3,
+        "HREF": "",
+        "TITLE": "Behance"
+      }
+    ],
+    "SCROLL_TEXT": "Desplázate"
+  },
+  "ABOUT": {
+    "TEXT": [
+      [
+        "Actualmente trabajo como ",
+        "Full Stack Developer ",
+        "en una empresa de desarrollo de Software con más de 4 años de experiencia. Me encanta aprender nuevas tecnologías y mejorar mis habilidades."
+      ],
+      [
+        "Me gusta trabajar en equipo y compartir mis conocimientos. Siempre estoy dispuesto a ayudar a mis compañeros y a aprender de ellos."
+      ],
+      [
+        "Siempre trato de dar un enfoque minimalista, creando sitios web con un diseño simple y claro. También me encanta realizar rediseño de webs existentes."
+      ],
+      [
+        "“Me considero una persona que consigue lo que se propone, ya que creo que los logros son los resultados de las decisiones que se toman“"
+      ]
+    ],
+    "DOWNLOAD_BUTTONS": [
+      {
+        "ID": 1,
+        "TEXT": "Descargar CV",
+        "HREF": "",
+        "COLOR": "#A5FFC9"
+      }
+    ]
+  },
+  "PROJECTS": {
+    "TITLE": "Explora mis proyectos",
+    "ITEMS": [
+      {
+        "ID": 1,
+        "TITLE": "BurnFit",
+        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
+        "BACKGROUND": "/src/assets/images/running.webp",
+        "REPOSITORY": "",
+        "WEB": "",
+        "TAGS": [52, 53, 49, 36, 48]
+      },
+      {
+        "id": 2,
+        "title": "Proyecto 2",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
-        "form": {
-            "name": "Nombre",
-            "email": "Email",
-            "message": "Mensaje",
-            "send": "Enviar"
-        }
+        "image": "https://picsum.photos/200/300",
+        "href": ""
+      },
+      {
+        "id": 3,
+        "title": "Proyecto 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
+        "image": "https://picsum.photos/200/300",
+        "href": ""
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "message": "Mensaje",
+      "send": "Enviar"
     }
+  }
 }
