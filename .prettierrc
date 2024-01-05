@@ -7,18 +7,14 @@
   "quoteProps": "as-needed",
   "jsxSingleQuote": false,
   "bracketSpacing": true,
-  "jsxBracketSameLine": false,
-  "arrowParens": "always",
-  "rangeStart": 0,
-  "requirePragma": false,
-  "insertPragma": false,
-  "proseWrap": "preserve",
   "endOfLine": "auto",
+  
   "overrides": [
     {
       "files": "*.json, *.astro",
       "options": {
-        "printWidth": 120
+        "printWidth": 120,
+        "parser": "astro"
       }
     }
   ]

@@ -1,64 +1,70 @@
 {
-  "TITLE": "maopa > porfolio",
-  "SALUTE": {
-    "TITLE_ONE": "maopa.dev",
-    "TITLE_TWO": "Full Stack Developer & Freelance",
-    "DESCRIPTION": "Encantado de resolver problemas  ❤️",
-    "ABOUT": [
-      "Trabajando actualmente de Full Stack Developer, encantado de resolver problemas   ❤️",
-      "Siempre trato de dar un enfoque minimalista, creando sitios web con un diseño simple y claro. También me encanta realizar rediseño de webs existentes.",
-      "“Me considero una persona que consigue lo que se propone, ya que creo que los logros son los resultados de las decisiones que se toman“"
-    ],
-    "ACCESS_BUTTONS": [
-      {
-        "ID": 1,
-        "TEXT": "Descargar CV",
-        "HREF": "",
-        "COLOR": "#A5FFC9"
-      },
-      {
-        "ID": 2,
-        "TEXT": "AA",
-        "HREF": "",
-        "COLOR": "#FCFABC"
-      }
-    ]
-  },
-  "PROJECTS": {
-    "TITLE": "Explora mis proyectos",
-    "ITEMS": [
-      {
-        "id": 1,
-        "title": "BurnFit",
+    "TITLE": "maopa > porfolio",
+    "SALUTE": {
+        "TITLE_ONE": "maopa.dev",
+        "TITLE_TWO": "Full Stack Developer & Freelance",
+        "DESCRIPTION": "Encantado de resolver problemas  ❤️",
+        "ABOUT": [
+            "Trabajando actualmente de Full Stack Developer, encantado de resolver problemas   ❤️",
+            "Siempre trato de dar un enfoque minimalista, creando sitios web con un diseño simple y claro. También me encanta realizar rediseño de webs existentes.",
+            "“Me considero una persona que consigue lo que se propone, ya que creo que los logros son los resultados de las decisiones que se toman“"
+        ],
+        "ACCESS_BUTTONS": [
+            {
+                "ID": 1,
+                "TEXT": "Descargar CV",
+                "HREF": "",
+                "COLOR": "#A5FFC9"
+            },
+            {
+                "ID": 2,
+                "TEXT": "AA",
+                "HREF": "",
+                "COLOR": "#FCFABC"
+            }
+        ]
+    },
+    "PROJECTS": {
+        "TITLE": "Explora mis proyectos",
+        "ITEMS": [
+            {
+                "id": 1,
+                "title": "BurnFit",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
+                "image": "/src/assets/images/running.webp",
+                "repository": "",
+                "tags": [
+                    52,
+                    53,
+                    49,
+                    36,
+                    48
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Proyecto 2",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
+                "image": "https://picsum.photos/200/300",
+                "href": ""
+            },
+            {
+                "id": 3,
+                "title": "Proyecto 3",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
+                "image": "https://picsum.photos/200/300",
+                "href": ""
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contacto",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
-        "image": "/src/assets/images/running.webp",
-        "repository": "",
-        "tags": [52, 53, 49, 36, 48]
-      },
-      {
-        "id": 2,
-        "title": "Proyecto 2",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
-        "image": "https://picsum.photos/200/300",
-        "href": ""
-      },
-      {
-        "id": 3,
-        "title": "Proyecto 3",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
-        "image": "https://picsum.photos/200/300",
-        "href": ""
-      }
-    ]
-  },
-  "contact": {
-    "title": "Contacto",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
-    "form": {
-      "name": "Nombre",
-      "email": "Email",
-      "message": "Mensaje",
-      "send": "Enviar"
+        "form": {
+            "name": "Nombre",
+            "email": "Email",
+            "message": "Mensaje",
+            "send": "Enviar"
+        }
     }
-  }
 }

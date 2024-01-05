@@ -1,17 +1,66 @@
 ---
+/// i18N Imports
+import { getHomeDataInternational } from "@i18n/index.ts"
+
+// Get locale selected
+const { currentLocale } = Astro
+const { SALUTE } = getHomeDataInternational({ currentLocale })
 ---
 
 <section 
 	id="about"
-	class="container w-screen h-auto py-16 md:py-20 lg:py-26 relative flex flex-col gap-y-12 justify-center 
+	class="container w-screen h-auto py-10 md:py-14 lg:py-18 relative flex flex-col gap-y-12 justify-center 
 	items-center align-middle transition-all duration-100 ease-in-out bg-transparent backdrop-blur-3xl"
 >
 	<div
-		class="w-[85%] max-w-[900px] h-auto mx-auto flex flex-col gap-y-18 justify-center items-center 
+		class="w-[90%] max-w-screen-xl h-auto mx-auto flex flex-col gap-y-20 justify-center items-center 
 		align-middle z-10"
 	>
-		<header class="text-[22px] font-termina-bold font-black uppercase">
-			Skills
+		<header class="w-full h-auto text-[40pxl] md:text-[44px] lg:text-[52px] text-center justity-center 
+			items-center align-middle">
+			✌️
 		</header>
+		<div class="w-full h-auto flex flex-col justify-center items-center align-middle">
+			<div 
+				id="about"
+				class="w-auto h-auto flex flex-col gap-y-14 justify-center items-center align-middle z-0"
+			>
+				{SALUTE.ABOUT.map((text: string, index: number) => (
+					<p 
+						id={`about-${index}`}
+						class={`text-[20px]  text-justify uppercase font-normal w-auto lg:w-[85%] h-auto justify-center items-start align-middle z-0
+						${index === SALUTE.ABOUT.length - 1 
+							? 'text-[#FEC400] w-[50%] font-roxborough-bold capitalize text-end font-semibold' 
+							: 'text-white text-justify'}
+						`}
+					>
+						{ text }
+					</p>
+				))}
+			</div>
+		</div>
+		<ul
+			id="buttons"
+			class="w-auto h-auto inline-flex gap-2 flex-1 flex-wrap justify-center items-center 
+			align-middle text-white"
+		>
+			{SALUTE.ACCESS_BUTTONS.map((button: any) => (
+				<li id={`button-${button.ID}`}>
+					<a
+						href={button.HREF} 
+						target="_blank" 
+						rel="noopener noreferrer"
+						class={`w-auto h-auto inline-flex p-2 px-8 rounded-full justify-center items-center
+						align-middle border-2 hover:border-transparent hover:bg-accent-two hover:-translate-x-1 
+						hover:-translate-y-1 hover:text-black transition-all transform-gpu duration-300 
+						ease-in-out text-[14px] font-bold`}
+					>
+						<span class="pointer-events-none">
+							{button.TEXT}
+						</span>
+					</a>
+				</li>
+			))}
+		</ul>
 	</div>
 </section>
