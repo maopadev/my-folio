@@ -1,0 +1,21 @@
+---
+interface Props {
+    tags: string[];
+}
+
+const { tags } = Astro.props;
+---
+
+<ul 
+	id="tags"
+	class="w-full h-full inline-flex m-auto rounded-xl justify-between items-center align-middle text-center gap-y-2 z-10"
+>
+	{ Array.from(tags).map((tag, index) => (
+		<li 
+			id={`tag-persona-${index}`}
+			class="text-[18px] font-medium text-center"
+		>
+			{ tag }
+		</li>
+	))}
+</ul>
