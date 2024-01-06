@@ -1,8 +1,10 @@
 {
   "TITLE": "maopadev",
   "SALUTE": {
-    "TITLE_ONE": ["maopa", "dev"],
-    "TAGS_PERSONAL": ["Programador Web", "Freelance", "/1998"],
+    "TITLE_ONE": ["Programador", "Creativo", "&", "Freelancer"],
+    "TITLE_TWO": ["Residiendo en", "Madrid"],
+    "PERSONAL_IMAGE": "/public/images/maopa-pose.webp",
+    "TAGS_PERSONAL": ["", "", "/1998"],
     "SOCIAL_LINKS": [
       {
         "ID": 1,

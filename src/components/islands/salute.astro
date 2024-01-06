@@ -20,19 +20,34 @@ let year = new Date().getFullYear()
 >
 	<div 
 		id="content" 
-		class="w-[85%] max-w-screen-lg flex flex-col h-auto mx-auto py-20 md:py-24 lg:py-28 justify-center items-center align-middle gap-y-12"
+		class="w-full max-w-screen-lg flex flex-col h-auto mx-auto py-20 md:py-24 lg:py-28 justify-center items-center align-middle gap-y-12"
 	>
 		<div
 			id="text"
-			class="w-full h-auto flex flex-col m-auto py-2 justify-center items-center align-middle text-center z-10"
+			class="w-auto h-auto text-[84px] md:text-[98px] lg:text-[84px] xl:text-[86px] font-playfair italic flex flex-wrap justify-end items-center align-middle gap-x-12 leading-none transition-all duration-200 text-end ease-in-out"
 		>
-			<h1 
-				class="text-[84px] md:text-[98px] lg:text-[115px] font-bricolage text-center italic w-full h-auto flex justify-center items-center align-middle transition-all duration-200 ease-in-out"
-			>
-				<strong class="font-black">
-					{ SALUTE.TITLE_ONE[0] }
-				</strong>
+			<h1 id="title-salute-01">
+				{ SALUTE.TITLE_ONE[0] }
+			</h1>
+			<h1 class="flex font-semibold not-italic">
 				{ SALUTE.TITLE_ONE[1] }
+			</h1>
+			<h1 id="title-salute-03">
+				{ SALUTE.TITLE_ONE[2] }
+			</h1>
+			<h1 id="title-salute-04">
+				{ SALUTE.TITLE_ONE[3] }
+			</h1>
+		</div>
+		<div
+			id="text"
+			class="w-full h-auto text-[84px] md:text-[98px] lg:text-[84px] xl:text-[86px] font-playfair italic flex flex-wrap flex-col justify-end items-start align-middle gap-x-12 leading-tight transition-all duration-200 ease-in-out"
+		>
+			<h1 id="title-salute-01">
+				{ SALUTE.TITLE_TWO[0] }
+			</h1>
+			<h1 class="flex font-semibold font-bricolage not-italic">
+				{ SALUTE.TITLE_TWO[1] }
 			</h1>
 		</div>
 		<ul 
