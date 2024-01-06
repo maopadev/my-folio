@@ -1,13 +1,12 @@
 ---
+/// Components Imports
 import Logo from '@components/logo.astro';
 import ThemeButton from '@components/buttons/toggle.theme.astro';
 ---
 
 <header 
 	id="container-header"
-	class="w-[85%] max-w-screen-xl h-auto flex flex-row fixed top-0 left-0 right-0 gap-x-24
-	justify-center items-center align-middle m-auto transition-all duration-200 ease-in-out 
-	py-8 z-10"
+	class="w-[92%] max-w-screen-2xl h-auto flex flex-row fixed top-0 left-0 right-0 gap-x-24 justify-center items-center align-middle m-auto transition-all duration-200 ease-in-out py-8 z-10"
 >
 	<nav 
 		class="w-auto h-auto inline-flex flex-grow mx-auto gap-x-6 justify-between items-center 
@@ -15,24 +14,23 @@ import ThemeButton from '@components/buttons/toggle.theme.astro';
 	>
 		<div 
 			id="separator" 
-			class="w-[40px] h-[7px] lg:block hidden bg-slate-700/80 rounded-full" 
+			class="w-[40px] h-[7px] lg:block hidden bg-black/80 dark:bg-slate-600/80 rounded-full transition-all duration-200 ease-in-out transform" 
 		/>
 		<a 
 			id="page-name"
-			class="w-auto h-auto font-bold text-slate-500 hover:underline hover:underline-slate-400 transform 
-			transition-all duration-200 ease-in-out"
+			class="w-auto h-auto font-bold transform transition-all duration-200 ease-in-out"
 			href="/"
 		>
-			<Logo class="w-[90px] h-auto justify-center items-center stroke-slate-700/80 stroke-[30]" />
+			<Logo class="w-[90px] h-auto justify-center items-center stroke-black dark:stroke-slate-600 stroke-[30] transition-all duration-200 ease-in-out transform" />
 		</a>
-		<div 
+		<div
 			id="separator" 
-			class="w-[100%] h-[7px] bg-slate-700/80 rounded-full" 
+			class="w-[100%] h-[7px] bg-black/80 dark:bg-slate-600/80 rounded-full transition-all duration-200 ease-in-out transform" 
 		/>
 		<ThemeButton />
 		<div 
 			id="separator" 
-			class="w-[40px] h-[7px] lg:block hidden bg-slate-700/80 rounded-full" 
+			class="w-[40px] h-[7px] lg:block hidden bg-black/80 dark:bg-slate-600/80 rounded-full transition-all duration-200 ease-in-out transform" 
 		/>
 	</nav>
-</h>
+</header>

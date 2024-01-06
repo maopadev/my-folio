@@ -13,7 +13,7 @@ export default {
       colors: {
         dark: "#080808",
         light: "#f3f0ed",
-        "accent-one": "#A5FFC9",
+        thunder: "#FEC400",
         "accent-two": "#FCFABC",
       },
       animation: {
