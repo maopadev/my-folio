@@ -6,14 +6,13 @@ export default {
   safeList: [],
   theme: {
     fontFamily: {
-      "roxborough-medium": ["Roxborough Medium", "sans-serif"],
-      "roxborough-bold": ["Roxborough Bold", "sans-serif"],
+      playfair: ["Playfair Display", "sans-serif"],
       bricolage: ["Bricolage Grotesque", "sans-serif"],
     },
     extend: {
       colors: {
-        primary: "#0d0d0d",
-        secondary: "#f2f2f2",
+        dark: "#080808",
+        light: "#f3f0ed",
         "accent-one": "#A5FFC9",
         "accent-two": "#FCFABC",
       },

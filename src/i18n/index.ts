@@ -8,11 +8,7 @@ const LANGUAGES_ACTIVES = {
   PORTUGUESE: "pt",
 };
 
-export const getHomeDataInternational = ({
-  currentLocale,
-}: {
-  currentLocale: string | undefined;
-}) => {
+export const getHomeDataInternational = ({ currentLocale }: { currentLocale: string | undefined }) => {
   if (currentLocale === LANGUAGES_ACTIVES.SPANISH) return HomeSpanish;
   if (currentLocale === LANGUAGES_ACTIVES.ENGLISH) return HomeEnglish;
   if (currentLocale === LANGUAGES_ACTIVES.PORTUGUESE) return HomePortuguese;

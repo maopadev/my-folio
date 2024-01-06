@@ -5,7 +5,7 @@ import BaseHead from '@components/base.astro';
 import Footer from '@components/footer.astro';
 
 /// Styles
-import '@styles/app.css';
+import '@/app.css';
 
 /// Astro Props
 interface Props {
@@ -25,7 +25,7 @@ const { title, description } = Astro.props;
 		/>
 	</head>
 	<body 
-		class="relative w-screen min-h-screen overflow-x-hidden bg-[#FFFFFF] dark:bg-[#080808] 
+		class="relative w-screen min-h-screen overflow-x-hidden bg-light dark:bg-dark 
 		justify-center items-center align-middle transition-all duration-200 ease-in-out"
 	>	
 		<!-- Navbar with Dark Mode -->
