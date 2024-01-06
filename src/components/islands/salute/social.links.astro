@@ -1,0 +1,32 @@
+---
+interface Props {
+    links: [{
+        ID: number;
+        HREF: string;
+        TITLE: string;
+    }];
+}
+
+/// Components Imports
+import SocialLinksButton from '@components/buttons/social.astro';
+
+const { links } = Astro.props;
+---
+
+<div
+    id="container-social"
+    class="w-full h-full flex mx-auto justify-center items-center align-middle z-10"
+>
+    <ul
+	    id="grid-links"
+	    class="w-[80%] h-full grid grid-flow-row grid-cols-5 gap-x-4 auto-rows-[10rem] justify-start items-center align-middle z-10"
+    >
+        { 
+            links.map(({ID, HREF, TITLE}) => (
+                <li>
+                    <SocialLinksButton number={ID} title={TITLE} link={HREF} />
+                </li>
+            ))
+        }
+    </ul>
+</div>

@@ -1,0 +1,58 @@
+---
+/// Components Imports
+import Background from "@components/background.astro"
+import SocialLinksComponent from "@components/islands/salute/social.links.astro"
+import DataWelcomeComponent from "@components/islands/salute/data.welcome.astro"
+
+/// i18N Imports
+import { getHomeDataInternational } from "@i18n/index.ts"
+
+// Get locale selected
+const { currentLocale } = Astro
+const { SALUTE } = getHomeDataInternational({ currentLocale })
+
+// Get the current year
+let year = new Date().getFullYear()
+---
+
+<section 
+	id="salute"
+	class="w-full h-auto flex mx-auto justify-center items-center align-middle rounded-b-[48px] bg-yellow-50/70 dark:bg-slate-700/30 text-black dark:text-white backdrop-blur-xl transition-all duration-100 ease-in-out"
+>
+	<div 
+		id="content" 
+		class="w-full max-w-screen-2xl flex flex-col h-auto mx-auto py-20 md:py-24 lg:py-28 justify-center items-center align-middle gap-y-12"
+	>
+		<DataWelcomeComponent work={SALUTE.TITLE_ONE} based={SALUTE.TITLE_TWO} />
+		<ul 
+			id="tags"
+			class="w-full h-full inline-flex m-auto rounded-xl justify-between items-center align-middle text-center gap-y-2 z-10"
+		>
+			{ Array.from(SALUTE.TAGS_PERSONAL).map((tag, index) => (
+				<li 
+					id={`tag-persona-${index}`}
+					class="text-[18px] font-medium text-center"
+				>
+					{ tag }
+				</li>
+			))}
+		</ul>
+		<SocialLinksComponent links={SALUTE.SOCIAL_LINKS} />
+		<div
+			id="year"
+			class="w-full h-full flex flex-col m-auto rounded-xl justify-center items-center align-middle text-center gap-y-2 z-10 col-span-5 lg:col-span-2"
+		>
+			<p class="text-[18px] lg:text-[24px] font-semibold text-center">
+				&copy;{ year }
+			</p>
+		</div>
+	</div>
+	<div 
+		id="background"
+		class="w-full h-full absolute flex overflow-hidden -pt-12 md:-pt-24 lg:-pt-32 left-0 right-0 bg-cover bg-no-repeat rounded-b-3xl justify-center items-center align-middle -z-10"
+	>
+		<Background
+			class="w-full h-auto stroke-light dark:stroke-[#080808] stroke-[120]" 
+		/>
+	</div>
+</section>

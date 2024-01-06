@@ -1,0 +1,59 @@
+---
+interface Props {
+    work: string[];
+    based: string[];
+    image?: string;
+}
+
+
+const { work, based } = Astro.props
+---
+
+<div class="w-[75%] h-auto flex flex-col justify-center items-center align-middle gap-y-12">
+	<div
+		id="text-work"
+		class="w-full h-auto text-[57px] md:text-[72px] lg:text-[84px] xl:text-[88px] font-playfair italic flex flex-wrap relative font-bold left-0 right-0 -bottom-28 lg:-bottom-24 text-center justify-center items-center align-middle gap-x-8 lg:gap-x-12 leading-none transition-all duration-200 ease-in-out z-50"
+	>
+		<h1 id="title-salute-01">
+			{ work[0] }
+		</h1>
+		<h1 
+			id="title-salute-02"
+			class="flex font-medium text-[60px] md:text-[75px] lg:text-[86px] xl:text-[92px] font-bricolage pt-4 not-italic"
+		>
+			{ work[1] }
+		</h1>
+		<h1 id="title-salute-03">
+			{ work[2] }
+		</h1>
+		<h1 
+			id="title-salute-04"
+			class="flex font-medium text-[60px] md:text-[75px] lg:text-[86px] xl:text-[92px] font-bricolage pt-2 not-italic"
+		>
+			{ work[3] }
+		</h1>
+	</div>
+	<div
+		id="image-personal"
+		class="relative block overflow-hidden w-full h-auto aspect-square lg:w-[600px] lg:h-[590px] border-[6px] border-solid border-slate-500/60 rounded-[32px] bg-cover bg-no-repeat transition-all transform-gpu duration-200 ease-in-out"
+	>
+		<img 
+			class="w-[600px] h-[580px] md:w-[650px] md:h-[630px] lg:w-[600px] lg:h-[590px] object-cover shadow-2xl transition-all duration-200 ease-in-out"
+			src="/images/running.webp"
+			alt="That's me!"
+		/>
+		<div class="w-[100%] h-[100%] bg-slate-700/60 bg-cover bg-no-repeat bg-center opacity-70 sepia-0" />
+		<div class="glass" />
+	</div>
+	<div
+		id="text-life"
+		class="w-[60%] h-auto text-[44px] md:text-[62px] lg:text-[74px] xl:text-[78px] font-playfair italic flex flex-wrap relative font-bold left-0 right-0 -bottom-2 lg:-bottom-4 text-center justify-center items-center align-middle gap-x-8 lg:gap-x-12 leading-tight transition-all duration-200 ease-in-out z-50"
+	>
+		<h1 id="title-salute-01">
+			{ based[0] }
+		</h1>
+		<h1 class="font-black font-bricolage italic">
+			{ based[1] }
+		</h1>
+	</div>
+</div>
