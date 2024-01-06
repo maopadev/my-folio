@@ -1,0 +1,43 @@
+---
+/// Components Imports
+import AboutDataTextComponent from "@components/islands/about/text.astro"
+
+/// i18N Imports
+import { getHomeDataInternational } from "@i18n/index.ts"
+
+// Get locale selected
+const { currentLocale } = Astro
+const { ABOUT } = getHomeDataInternational({ currentLocale })
+---
+
+<section 
+	id="about"
+	class="container w-screen h-auto py-10 md:py-14 lg:py-18 relative flex flex-col gap-y-12 justify-center 
+	items-center align-middle transition-all duration-200 ease-in-out transform-gpu text-black dark:text-white"
+>
+	<div
+		id="container"
+		class="w-full max-w-screen-2xl h-auto mx-auto flex flex-col gap-y-20 justify-center items-center 
+		align-middle z-10"
+	>
+		<header 
+			class="w-auto h-auto inline-flex gap-x-12 justity-center items-center align-middle"
+		>
+			<h1 class="w-full text-[40px] md:text-[44px] lg:text-[52px] text-center">
+				✌️
+			</h1>
+			<!-- Button Download CV -->
+			<a
+				href={ABOUT.DOWNLOAD_BUTTONS[0].HREF} 
+				target="_blank" 
+				rel="noopener noreferrer"
+				class={`w-auto h-auto inline-flex p-[0.8rem] px-16 rounded-full justify-center items-center align-middle border-2 border-black/80 dark:border-slate-700 hover:border-transparent hover:bg-thunder hover:dark:bg-accent-two hover:-translate-x-1 hover:-translate-y-1 hover:text-black transition-all transform-gpu duration-300 ease-in-out text-[16px] text-center font-bold leading-tight`}
+			>
+				<span class="w-full h-auto pointer-events-none">
+					{ABOUT.DOWNLOAD_BUTTONS[0].TEXT}
+				</span>
+			</a>
+		</header>
+		<AboutDataTextComponent text={ABOUT.TEXT} />
+	</div>
+</section>

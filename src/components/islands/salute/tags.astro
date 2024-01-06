@@ -1,0 +1,25 @@
+---
+interface Props {
+    tags: string[];
+}
+
+const { tags } = Astro.props;
+---
+<div
+    id="tags-container"
+    class="w-[75%] relative flex top-0 m-auto justify-center items-center align-middle z-50"
+>
+    <ul 
+        id="tags"
+        class="w-full h-auto inline-flex m-auto justify-between items-center align-middle pb-16 gap-x-2"
+    >
+        { Array.from(tags).map((tag, index) => (
+            <li 
+                id={`tag-persona-${index}`}
+                class={`font-semibold text-center text-black/80 dark:text-slate-300 hover:text-thunder transition-all duration-200 ease-in-out cursor-pointer ${index === 2 ? 'text-[17px] hover:text-green-400' : 'text-[14px]'}`}
+            >
+                { tag }
+            </li>
+        ))}
+    </ul>
+</div>

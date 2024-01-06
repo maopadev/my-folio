@@ -1,0 +1,29 @@
+---
+/// Components Imports
+import IconBackHomeButton from '@components/navbar/logo.button.astro';
+import ThemeButton from '@components/navbar/toggle.theme.astro';
+---
+
+<header 
+	id="container-header"
+	class="w-[90%] lg:w-[100%] h-auto flex flex-row fixed top-0 left-0 right-0 gap-x-24 justify-center items-center align-middle m-auto transition-all duration-200 ease-in-out py-8 z-10"
+>
+	<nav 
+		class="container w-full max-w-screen-2xl h-auto inline-flex flex-grow mx-auto gap-x-6 justify-between items-center align-middle transition-all duration-200 ease-in-out"
+	>
+		<div 
+			id="separator" 
+			class="w-[40px] h-[5px] lg:block hidden bg-black/80 dark:bg-slate-600/30 rounded-full transition-all duration-200 ease-in-out transform" 
+		/>
+		<IconBackHomeButton />
+		<div
+			id="separator" 
+			class="w-full h-[5px] bg-black/80 dark:bg-slate-600/30 rounded-full transition-all duration-200 ease-in-out transform" 
+		/>
+		<ThemeButton />
+		<div 
+			id="separator" 
+			class="w-[40px] h-[5px] lg:block hidden bg-black/80 dark:bg-slate-600/30 rounded-full transition-all duration-200 ease-in-out transform" 
+		/>
+	</nav>
+</header>

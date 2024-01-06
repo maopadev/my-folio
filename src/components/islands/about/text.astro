@@ -1,0 +1,35 @@
+---
+interface Props {
+    text: string[][];
+}
+
+const { text } = Astro.props;
+---
+
+<div 
+	id="about"
+	class="w-full h-auto flex flex-col justify-center items-center align-middle gap-y-24"
+>
+	<p 
+	    id="about-text-intro"
+		class="w-full max-w-[68%] h-auto relative left-0 top-0 text-[16px] md:text-[18px] lg:text-[22px] text-start items-center align-middle text-wrap uppercase font-semibold"
+	>
+		{ text[0][0] }
+		<strong class="italic px-1">
+			{ text[0][1] }
+		</strong>
+		{ text[0][2] }
+	</p>
+	<p 
+		id="about-text-cooperate"
+		class="w-full max-w-[68%] h-auto relative left-0 top-0 text-[16px] md:text-[18px] lg:text-[22px] text-end items-center align-middle text-wrap font-semibold uppercase text-black/60 dark:text-slate-300"
+	>
+		{ text[1] }
+	</p>
+	<p 
+		id="about-text-design"
+		class="w-full max-w-[58%] h-auto relative left-0 top-0 text-[16px] md:text-[18px] lg:text-[22px] text-center items-center align-middle text-wrap font-semibold uppercase text-black/60 dark:text-slate-300"
+	>
+		{ text[2] }
+	</p>
+</div>
