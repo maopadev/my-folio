@@ -1,11 +1,18 @@
 {
-  "TITLE": "maopadev",
+  "TITLE": "@maopa",
   "SALUTE": {
-    "TITLE_ONE": ["Full Stack", "Developer", "&", "Freelancer"],
-    "TITLE_TWO": ["Residiendo en", "Madrid"],
+    "MEMOJI_ICON": [
+      "/images/memoji/maopa.webp",
+      "/images/memoji/bg-01.webp",
+      "/images/memoji/bg-02.webp",
+      "/images/memoji/bg-03.webp"
+    ],
+    "NAME": ["Hola,", "Soy Maopa."],
+    "TITLE_ONE": ["Full Stack Developer en activo", "&", "Freelancer"],
+    "TITLE_TWO": ["Actualmente resido en", "Madrid"],
     "PERSONAL_IMAGE": "/images/maopa-pose.webp",
     "BACKGROUND_IMAGE": "/images/maopa-background.webp",
-    "TAGS_PERSONAL": ["", "", "/1998"],
+    "TAGS_PERSONAL": ["Websites", "Apps", "Design", "/1998"],
     "SOCIAL_LINKS": [
       {
         "ID": 1,
