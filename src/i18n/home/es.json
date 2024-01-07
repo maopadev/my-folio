@@ -1,6 +1,7 @@
 {
   "TITLE": "@maopa",
   "SALUTE": {
+    "NAME": ["Mario", "Al Habla!"],
     "TITLE_ONE": ["Full Stack", "Developer", "&", "Freelancer"],
     "TITLE_TWO": ["Residiendo en", "Madrid"],
     "PERSONAL_IMAGE": "/images/maopa-pose.webp",

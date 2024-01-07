@@ -38,7 +38,7 @@ const arrTags = insert(arrTagsWithoutYear, 2, `©${year}`)
 		id="content" 
 		class="container w-full max-w-screen-2xl flex flex-col h-full mx-auto py-20 lg:py-14 justify-center items-center align-middle gap-y-12"
 	>
-		<DataWelcomeComponent work={SALUTE.TITLE_ONE} based={SALUTE.TITLE_TWO} />
+		<DataWelcomeComponent salute={SALUTE.NAME} work={SALUTE.TITLE_ONE} based={SALUTE.TITLE_TWO} />
 		<TagsWelcomeComponent tags={arrTags} />
 	</div>
 	<Background />
