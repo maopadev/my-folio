@@ -13,8 +13,10 @@ export default {
       colors: {
         dark: "#080808",
         light: "#f3f0ed",
-        thunder: "#FEC400",
-        "accent-two": "#FCFABC",
+        thunder: "#f76e38",
+        leaf: "#108d6c",
+        arena: "#c5c0ad",
+        grass: "#7d9387",
       },
       animation: {
         marquee: 'marquee 30s linear infinite',

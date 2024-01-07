@@ -1,9 +1,8 @@
 ---
 
 /// Components Imports
-import Background from "@components/background.astro"
-import SocialLinksComponent from "@components/islands/salute/social.links.astro"
-import DataWelcomeComponent from "@/components/islands/salute/text.welcome.astro"
+import Background from "@/components/islands/salute/background.astro"
+import DataWelcomeComponent from "@/components/islands/salute/text.astro"
 import TagsWelcomeComponent from "@/components/islands/salute/tags.astro"
 
 /// i18N Imports
@@ -24,13 +23,16 @@ const insert = (arr: string | any[], index: any, ...newItem: any) => [
 
 // Get the current year
 let year = new Date().getFullYear()
+
+// Insert the current year in the tags
 let arrTagsWithoutYear = SALUTE.TAGS_PERSONAL
 const arrTags = insert(arrTagsWithoutYear, 2, `©${year}`)
+
 ---
 
 <section 
 	id="salute"
-	class="w-full h-[95vh] flex mx-auto justify-center items-center align-middle rounded-b-[48px] bg-yellow-50/70 dark:bg-slate-700/30 text-black dark:text-white backdrop-blur-xl transition-all duration-100 ease-in-out"
+	class="w-full h-[95vh] flex mx-auto justify-center items-center align-middle rounded-b-[48px] bg-light dark:bg-slate-700/30 text-black dark:text-white backdrop-blur-xl transition-all duration-100 ease-in-out"
 >
 	<div 
 		id="content" 
@@ -39,12 +41,5 @@ const arrTags = insert(arrTagsWithoutYear, 2, `©${year}`)
 		<DataWelcomeComponent work={SALUTE.TITLE_ONE} based={SALUTE.TITLE_TWO} />
 		<TagsWelcomeComponent tags={arrTags} />
 	</div>
-	<div
-		id="background"
-		class="w-full h-full absolute flex overflow-hidden -pt-12 md:-pt-24 lg:-pt-32 left-0 right-0 bg-cover bg-no-repeat rounded-b-3xl justify-center items-center align-middle -z-10 transition-all duration-100 ease-in-out"
-	>
-		<Background
-			class="w-full h-auto stroke-light dark:stroke-[#080808] stroke-[120]" 
-		/>
-	</div>
+	<Background />
 </section>

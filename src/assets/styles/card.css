@@ -13,19 +13,3 @@
 	position: relative;
 }
 
-.glass {
-	background: linear-gradient(
-		90deg,
-		transparent,
-		transparent 0.75rem,
-		var(--color-3) 2rem
-	);
-	background-size: 2.5rem 100%;
-	height: 100%;
-	width: 80%;
-	backdrop-filter: blur(.65rem);
-	filter: contrast(1.35);
-	position: absolute;
-	z-index: 49;
-	inset: 0;
-}

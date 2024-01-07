@@ -6,12 +6,12 @@
     />
     <style>
         path {
-            stroke: #FEC400;
+            stroke: #108d6c;
             stroke-width: 35;
         }
         @media (prefers-color-scheme: dark) {
             path {
-                stroke: #FEC400;
+                stroke: #108d6c;
             }
         }
     </style>
