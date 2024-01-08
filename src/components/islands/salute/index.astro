@@ -12,6 +12,11 @@ import { getHomeDataInternational } from "@i18n/index.ts"
 const { currentLocale } = Astro
 const { SALUTE } = getHomeDataInternational({ currentLocale })
 
+let arrMemoji = SALUTE.BENTO.MEMOJI_ICON
+
+// Get random background image path
+const randomBackground = Math.floor(Math.random() * arrMemoji.length)
+const arrImages = [arrMemoji[0], arrMemoji[randomBackground === 0 ? 1 : randomBackground]]
 ---
 
 <section 
@@ -22,7 +27,7 @@ const { SALUTE } = getHomeDataInternational({ currentLocale })
 		id="content" 
 		class="container w-full max-w-screen-2xl flex flex-col h-full mx-auto py-20 lg:py-14 justify-center items-center align-middle gap-y-12"
 	>
-		<DataWelcomeComponent bento={SALUTE.BENTO_TEXT} />
+		<DataWelcomeComponent salute={SALUTE.BENTO.NAME_TEXT_ONE} images={arrImages} />
 		<TagsWelcomeComponent tags={SALUTE.TAGS_PERSONAL} />
 	</div>
 	<Background />

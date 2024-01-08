@@ -1,84 +1,98 @@
 ---
 interface Props {
-	bento: string[];
+	salute: string[];
+	images: string[];
 }
 
-const { bento } = Astro.props
+const { salute, images } = Astro.props
 ---
 
 <grid
 	id="data"
-	class="w-full h-auto grid grid-cols-[1fr_0.7fr] relative left-0 right-0 mx-auto gap-x-2 gap-y-2 max-mdd:grid-cols-[1fr] grid-rows-[auto] py-12 flex-wrap justify-center items-center align-middle z-50"
+	class="w-full h-auto grid grid-cols-1 xl:grid-cols-5 grid-rows-[auto] auto-cols-max relative left-0 right-0 mx-auto gap-x-2 gap-y-2 py-12 flex-wrap justify-center items-center align-middle z-50"
 >
 	<div
-		id="text-intro" 
-		class="flex w-full max-w-[746px] flex-col items-start gap-x-8 gap-y-8 p-12 rounded-3xl max-mdd:max-w-none max-md:p-8 bg-slate-50/30 dark:bg-slate-900/30 backdrop-blur-3xl"
+		id="text-intro"
+		class="flex w-full max-w-[746px] col-span-2 row-span-3 flex-col items-start gap-x-8 gap-y-8 p-12 rounded-3xl max-mdd:max-w-none max-md:p-8 bg-slate-50/30 dark:bg-slate-900/30 backdrop-blur-[98px]"
 	>
-		<img
-			id="image-profile"
-			class="flex w-[108px] h-[108px] overflow-hidden rounded-full transition-all duration-200 ease-in-out"
-			src="/images/running.webp"
-			alt="That's me!"
-		/>
-		<p
-			id="text"
-			class="w-full h-auto text-[24px] md:text-[30px] lg:text-[34px] xl:text-[38px] inline-flex flex-wrap relative font-medium left-0 right-0 justify-start items-start align-middle gap-x-4 leading-tight transition-all duration-200 ease-in-out z-50"
+		<images
+			id="memoji"
+			class="flex w-[140px] h-[140px] overflow-hidden rounded-full border-none relative cursor-pointer hover:-translate-x-2 hover:-translate-y-2 justify-center items-center align-middle transition-all transform-gpu duration-200 ease-in-out"
 		>
-			{ Array.from(bento.NAME_TEXT_ONE).map((text: string, index: number) => (
-				(index === 0 || index === 4)  
-					? text
-					: <strong>{ text }</strong>
-			))}
-		</p>
-	</div>
-	<!--
-	<div
-		id="text-name"
-		class="w-full h-auto text-[38px] md:text-[44px] lg:text-[58px] xl:text-[80px] flex flex-col flex-wrap relative font-bold left-0 right-0 -bottom-8 justify-center items-center align-middle gap-x-8 xl:gap-x-6 leading-none transition-all duration-200 ease-in-out z-50"
-	>
-		{ Array.from(salute).map((text, index) => (
-			<p 
-				id={`text-work-${ index + 1 }`}
-				class={`${ index === 0 ? 'font-playfair -ml-24' : '' }`}
-			>
-				{ text }
+			<img 
+				id="memoji-front"
+				class="w-[100%] h-[100%] absolute flex top-0 left-0 right-0 bottom-0 bg-cover bg-no-repeat bg-center z-50"
+				src={ images[0] }
+				alt="That's me!"
+			/>
+			<img
+				id="back"
+				class="w-full h-full bg-cover bg-no-repeat bg-center opacity-70 sepia-0"
+				src={ images[1] }
+				alt="That's me!"
+			/>
+			<div class="glass" />
+		</images>
+		<div
+			id="salute"
+			class="w-full h-auto text-[24px] md:text-[30px] lg:text-[34px] xl:text-[38px] inline-flex flex-wrap relative left-0 right-0 justify-start items-start align-middle gap-x-4 leading-tight transition-all duration-200 ease-in-out z-50"
+		>
+			<p class="font-medium w-auto h-auto flex">
+				{ salute[0] }
 			</p>
-		))}
-	</div>
-	<div
-		id="image-personal"
-		class="relative block overflow-hidden w-full h-auto aspect-square lg:w-[400px] lg:h-[390px] object-cover bg-no-repeat rounded-[24px] shadow-2xl transition-all transform-gpu duration-200 ease-in-out"
-	>
-		<img 
-			class="w-[100%] h-[100%] transition-all duration-200 ease-in-out"
-			src="/images/running.webp"
-			alt="That's me!"
-		/>
-	</div>
-	<div
-		id="text-work"
-		class="w-[100%] lg:w-[70%] xl:w-[60%] h-auto text-[24px] md:text-[30px] lg:text-[34px] xl:text-[38px] inline-flex flex-wrap relative font-medium left-0 right-0 justify-end items-center align-middle gap-x-8 xl:gap-x-6 leading-none transition-all duration-200 ease-in-out z-50"
-	>
-		{ Array.from(work).map((text, index) => (
-			<p
-				id={`text-work-${ index + 1 }`}
-				class={`${ index === 2 ? 'font-playfair font-black' : '' }`}
-			>
-				{ text }
+			<p class="font-bold w-auto h-auto flex">
+				{ salute[1] }
 			</p>
-		))}
+			<p class="font-bold w-auto h-auto flex">
+				{ salute[2] }
+			</p>
+			<p class="font-bold w-auto h-auto flex">
+				{ salute[3] }
+			</p>
+			<p class="font-bold w-auto h-auto flex">
+				{ salute[4] }
+			</p>
+			<p class="text-black/70 dark:text-white/60 font-medium dark:font-normal w-auto h-auto flex">
+				{ salute[5] }
+			</p>
+		</div>
 	</div>
 	<div
-		id="text-based"
-		class="w-[100%] lg:w-[70%] xl:w-[60%] h-auto text-[24px] md:text-[30px] lg:text-[34px] xl:text-[38px] inline-flex flex-wrap relative font-medium left-0 right-0 bottom-6 md:bottom-8 lg:bottom-2 text-center justify-end items-center align-middle gap-x-4 leading-none transition-all duration-200 ease-in-out z-50"
+		id="contact"
+		class="flex w-full max-w-[500px] flex-col items-start gap-x-8 gap-y-8 p-12 rounded-3xl max-mdd:max-w-none max-md:p-8 bg-slate-50/30 dark:bg-slate-900/30 backdrop-blur-[98px]"
 	>
-		{ Array.from(based).map((text, index) => (
-			<p
-				id={`text-based-${ index + 1 }`}
-				class={`${ index === 2 ? 'font-playfair font-black' : '' }`}
-			>
-				{ text }
-			</p>
-		))}
-	</div>-->
+		<h1>Contact</h1>
+	</div>
+	<div
+		id="social"
+		class="flex w-full max-w-[500px] h-[400px] flex-col items-start gap-x-8 gap-y-8 p-12 rounded-3xl max-mdd:max-w-none max-md:p-8 bg-slate-50/30 dark:bg-slate-900/30 backdrop-blur-[98px]"
+	>
+		<h1>Social</h1>
+	</div>
 </grid>
+
+<style>
+
+:root {
+	--color-2: #b39e7925;
+	--color-3: #ffffff15;
+}
+
+.glass {
+	background: linear-gradient(
+		90deg,
+		transparent,
+		transparent 0.75rem,
+		var(--color-3) 2rem
+	);
+	background-size: 2.5rem 100%;
+	height: 100%;
+	width: 80%;
+	backdrop-filter: blur(.65rem);
+	filter: contrast(1.35);
+	position: absolute;
+	z-index: 49;
+	inset: 0;
+}
+
+</style>
