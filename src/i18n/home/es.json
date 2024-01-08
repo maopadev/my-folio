@@ -1,5 +1,5 @@
 {
-  "TITLE": "@maopa",
+  "TITLE": "> maopa",
   "SALUTE": {
     "MEMOJI_ICON": [
       "/images/memoji/maopa.webp",
@@ -7,9 +7,10 @@
       "/images/memoji/bg-02.webp",
       "/images/memoji/bg-03.webp"
     ],
-    "NAME": ["Hola,", "Soy Maopa."],
-    "TITLE_ONE": ["Full Stack Developer en activo", "&", "Freelancer"],
-    "TITLE_TWO": ["Actualmente resido en", "Madrid"],
+    "BENTO_TEXT": {
+      "NAME_TEXT_ONE": ["Hola,", "Soy Maopa. ", "Full Stack Developer en activo", "&", "Freelancer. ", "Siempre ayudando!. Actualmente por Madrid."],
+      "TEXT_TWO": ""
+    },
     "PERSONAL_IMAGE": "/images/maopa-pose.webp",
     "BACKGROUND_IMAGE": "/images/maopa-background.webp",
     "TAGS_PERSONAL": ["Websites", "Apps", "Design", "/1998"],

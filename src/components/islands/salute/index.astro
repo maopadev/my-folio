@@ -12,22 +12,6 @@ import { getHomeDataInternational } from "@i18n/index.ts"
 const { currentLocale } = Astro
 const { SALUTE } = getHomeDataInternational({ currentLocale })
 
-const insert = (arr: string | any[], index: any, ...newItem: any) => [
-  // part of the array before the specified index
-  ...arr.slice(0, index),
-  // inserted item
-  ...newItem,
-  // part of the array after the specified index
-  ...arr.slice(index)
-]
-
-// Get the current year
-let year = new Date().getFullYear()
-
-// Insert the current year in the tags
-let arrTagsWithoutYear = SALUTE.TAGS_PERSONAL
-const arrTags = insert(arrTagsWithoutYear, 2, `©${year}`)
-
 ---
 
 <section 
@@ -38,8 +22,8 @@ const arrTags = insert(arrTagsWithoutYear, 2, `©${year}`)
 		id="content" 
 		class="container w-full max-w-screen-2xl flex flex-col h-full mx-auto py-20 lg:py-14 justify-center items-center align-middle gap-y-12"
 	>
-		<DataWelcomeComponent salute={SALUTE.NAME} work={SALUTE.TITLE_ONE} based={SALUTE.TITLE_TWO} />
-		<TagsWelcomeComponent tags={arrTags} />
+		<DataWelcomeComponent bento={SALUTE.BENTO_TEXT} />
+		<TagsWelcomeComponent tags={SALUTE.TAGS_PERSONAL} />
 	</div>
 	<Background />
 </section>
