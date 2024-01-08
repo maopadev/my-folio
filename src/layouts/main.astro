@@ -25,17 +25,14 @@ const { title, description } = Astro.props;
 		/>
 	</head>
 	<body 
-		class="relative w-screen min-h-screen overflow-x-hidden bg-light dark:bg-dark 
-		justify-center items-center align-middle transition-all duration-200 ease-in-out"
+		class="relative w-screen min-h-screen overflow-x-hidden bg-light dark:bg-dark justify-center items-center align-middle transition-all duration-200 ease-in-out"
 	>	
 		<!-- Navbar with Dark Mode -->
         <Navbar />
 		<!-- Content -->
 		<main 
-			id="container"
-			class="w-[100%] h-auto flex flex-col relative top-0 left-0 right-0 
-			flex-grow gap-y-4 md:gap-y-10 lg:gap-y-18 justify-center items-center align-middle 
-			transition-all duration-200 ease-in-out"
+			id="content"
+			class="w-[100%] h-auto flex flex-col relative top-0 left-0 right-0 flex-grow gap-y-4 md:gap-y-10 lg:gap-y-18 justify-center items-center align-middle transition-all duration-200 ease-in-out"
 		>
         	<slot />
 		</main>

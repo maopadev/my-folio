@@ -11,10 +11,10 @@ import ContactPageSection from '@components/islands/contact.astro'
 /// i18N Imports
 import { getHomeDataInternational } from "@i18n/index.ts"
 const { currentLocale } = Astro
-const i18n = getHomeDataInternational({ currentLocale })
+const { TITLE } = getHomeDataInternational({ currentLocale })
 
 ---
-<MainLayout title={i18n.TITLE}>
+<MainLayout title={TITLE}>
 		<SalutePageSection />
 		<AboutPageSection />
 		<ProjectsPageSection />

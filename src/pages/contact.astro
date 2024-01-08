@@ -1,17 +1,11 @@
 ---
+/// Layout Import
 import MainLayout from '@layouts/main.astro'
-
-/// i18N Imports
-import { getHomeDataInternational } from "@i18n/index.ts"
-const { currentLocale } = Astro
-const i18n = getHomeDataInternational({ currentLocale })
 ---
 
 <MainLayout title='Contacto'>
 	<main 
-		class="w-auto h-auto flex flex-col flex-grow mx-auto gap-y-10 md:gap-y-16 lg:gap-y-20 
-		justify-center items-center align-middle transition-all 
-		duration-200 ease-in-out text-white"
+		class="w-auto h-auto flex flex-col flex-grow mx-auto gap-y-10 md:gap-y-16 lg:gap-y-20 justify-center items-center align-middle transition-all duration-200 ease-in-out text-white"
 	>
         <h1 class="text-termina-heavy font-black text-2xl">
             Contacto
