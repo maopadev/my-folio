@@ -1,35 +1,34 @@
 {
-  "TITLE": "@maopa",
+  "TITLE": "> maopa",
   "SALUTE": {
-    "MEMOJI_ICON": [
-      "/images/memoji/maopa.webp",
-      "/images/memoji/bg-01.webp",
-      "/images/memoji/bg-02.webp",
-      "/images/memoji/bg-03.webp"
-    ],
-    "NAME": ["Hola,", "Soy Maopa."],
-    "TITLE_ONE": ["Full Stack Developer en activo", "&", "Freelancer"],
-    "TITLE_TWO": ["Actualmente resido en", "Madrid"],
-    "PERSONAL_IMAGE": "/images/maopa-pose.webp",
-    "BACKGROUND_IMAGE": "/images/maopa-background.webp",
+    "BENTO": {
+      "NAME_TEXT_ONE": ["Hola,", "Soy Maopa. ", "Full Stack Developer en activo", "&", "Freelancer. ", "Siempre ayudando!. Actualmente por Madrid."],
+      "MEMOJI_ICON": [
+        "/images/memoji/ec22897b-bbc7-4320-8822-d082d353c6bc1a.webp",
+        "/images/memoji/bg-01.webp",
+        "/images/memoji/bg-02.webp",
+        "/images/memoji/bg-03.webp"
+      ],
+      "PROJECT_IN_YOUR_MIND": ["¿Tienes un proyecto en mente?", "Contacta conmigo!", "mario.ortega.pal@gmail.com"],
+      "SOCIAL_LINKS": [
+        {
+          "ID": 1,
+          "HREF": "https://github.com/maopadev",
+          "TITLE": "Github"
+        },
+        {
+          "ID": 2,
+          "HREF": "https://threads.com/@maopadev",
+          "TITLE": "Threads"
+        },
+        {
+          "ID": 3,
+          "HREF": "",
+          "TITLE": "Behance"
+        }
+      ]
+    },
     "TAGS_PERSONAL": ["Websites", "Apps", "Design", "/1998"],
-    "SOCIAL_LINKS": [
-      {
-        "ID": 1,
-        "HREF": "https://github.com/maopadev",
-        "TITLE": "Github"
-      },
-      {
-        "ID": 2,
-        "HREF": "https://threads.com/@maopadev",
-        "TITLE": "Threads"
-      },
-      {
-        "ID": 3,
-        "HREF": "",
-        "TITLE": "Behance"
-      }
-    ],
     "SCROLL_TEXT": "Desplázate"
   },
   "ABOUT": {
