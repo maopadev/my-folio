@@ -1,7 +1,11 @@
 ---
 
 interface Props {
-    social: string [];
+    social: {
+        ID: string;
+        TITLE: string;
+        HREF: string;
+    }[];
 }
 
 const { social } = Astro.props

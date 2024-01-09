@@ -1,7 +1,11 @@
 ---
 interface Props {
 	salute: string[];
-	social: string[];
+	social: {
+        ID: string;
+        TITLE: string;
+        HREF: string;
+    }[];
 	contact: string[];
 	images: string[];
 }

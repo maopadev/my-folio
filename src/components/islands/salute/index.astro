@@ -18,7 +18,9 @@ let random = Math.floor(Math.random() * arrMemoji.length)
 let images = [arrMemoji[0], arrMemoji[random === 0 ? 1 : random]]
 
 let salute = SALUTE.BENTO.NAME_TEXT_ONE
-let social = SALUTE.BENTO.SOCIAL_LINKS
+let social = SALUTE.BENTO.SOCIAL_LINKS.map(
+	link => `ID: ${link.ID}, HREF: ${link.HREF}, TITLE: ${link.TITLE}`
+);
 let contact = SALUTE.BENTO.PROJECT_IN_YOUR_MIND
 ---
 
