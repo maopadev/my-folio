@@ -18,9 +18,7 @@ let random = Math.floor(Math.random() * arrMemoji.length)
 let images = [arrMemoji[0], arrMemoji[random === 0 ? 1 : random]]
 
 let salute = SALUTE.BENTO.NAME_TEXT_ONE
-let social = SALUTE.BENTO.SOCIAL_LINKS.map(
-	link => `ID: ${link.ID}, HREF: ${link.HREF}, TITLE: ${link.TITLE}`
-);
+let social = SALUTE.BENTO.SOCIAL_LINKS
 let contact = SALUTE.BENTO.PROJECT_IN_YOUR_MIND
 ---
 
@@ -32,7 +30,7 @@ let contact = SALUTE.BENTO.PROJECT_IN_YOUR_MIND
 		id="content"
 		class="container w-full max-w-screen-2xl flex relative flex-col h-full mx-auto top-8 md:top-12 lg:top-0  lg:py-20 justify-center items-center align-middle gap-y-12 px-4"
 	>
-		<DataWelcomeComponent  {salute} {social} {contact} {images} />
+		<DataWelcomeComponent {salute} {social} {contact} {images} />
 		<TagsWelcomeComponent tags={SALUTE.TAGS_PERSONAL} />
 	</div>
 	<Background />
