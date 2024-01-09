@@ -13,7 +13,7 @@ const { number, title, link } = Astro.props
 
 ---
 
-<a
+<a aria-label=""
     id={`link-${number}`}
     class="relative left-0 right-0 flex flex-col px-12 m-auto justify-center items-start align-middle overflow-hidden w-[240px] h-[120px] border-[4px] border-solid border-transparent hover:border-thunder rounded-[24px] cursor-pointer hover:-translate-x-2 hover:-translate-y-2 transition-all transform-gpu duration-200 ease-in-out"
     href={link}

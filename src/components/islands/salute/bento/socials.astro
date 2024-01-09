@@ -20,6 +20,7 @@ const { social } = Astro.props
             href={ social[index].HREF }
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={`Social Item ${index}`}
         >
             <p class="font-bold text-[18px]">0{ social[index].ID }</p>
             <h1>{ social[index].TITLE }</h1>
