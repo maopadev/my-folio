@@ -12,7 +12,7 @@ const { social } = Astro.props
     [[6,1],[6,2],[7,1]].map((position, index) => (
         <a
             id={`bento-social-${index}`}
-            class={`flex w-full max-w-[500px] col-start-${position[0]} row-start-${position[1]} flex-col py-6 px-[32px] rounded-3xl max-mdd:max-w-none max-md:p-8 bg-slate-50/30 dark:bg-slate-900/30 backdrop-blur-[98px] justify-center items-start align-middle hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200 ease-in-out`}
+            class={`flex w-full max-w-[500px] col-start-${position[0]} row-start-${position[1]} flex-col py-4 px-[32px] rounded-3xl max-mdd:max-w-none max-md:p-8 bg-slate-50/30 dark:bg-slate-900/30 backdrop-blur-[98px] justify-center items-start align-middle hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200 ease-in-out`}
             href={ social[index].HREF }
             target="_blank"
             rel="noopener noreferrer"
