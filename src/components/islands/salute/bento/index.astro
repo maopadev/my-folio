@@ -1,0 +1,23 @@
+---
+interface Props {
+	salute: string[];
+	social: string[];
+	contact: string[];
+	images: string[];
+}
+
+import MemojiBentoItem from "@components/islands/salute/bento/memoji.astro"
+import ContactBentoItem from "@components/islands/salute/bento/contact.astro"
+import SocialsBentoItem from "@components/islands/salute/bento/socials.astro"
+
+const { salute, images, social, contact } = Astro.props
+---
+
+<grid
+	id="data"
+	class="w-full h-auto grid grid-cols-3 lg:grid-cols-6 xl:grid-cols-7 grid-rows-auto gap-4 relative left-0 right-0 mx-auto py-12 flex-wrap justify-center items-center align-middle z-50"
+>
+	<MemojiBentoItem {salute} {images} />
+	<ContactBentoItem {contact} />
+	<SocialsBentoItem {social} />
+</grid>

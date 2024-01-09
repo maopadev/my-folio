@@ -1,0 +1,24 @@
+---
+
+interface Props {
+    social: string [];
+}
+
+const { social } = Astro.props
+
+---
+
+{
+    [[6,1],[6,2],[7,1]].map((position, index) => (
+        <a
+            id={`bento-social-${index}`}
+            class={`flex w-full max-w-[500px] col-start-${position[0]} row-start-${position[1]} flex-col gap-x-8 p-12 rounded-3xl max-mdd:max-w-none max-md:p-8 bg-slate-50/30 dark:bg-slate-900/30 backdrop-blur-[98px] justify-center items-start align-middle transition-all duration-200 ease-in-out`}
+            href={ social[index].HREF }
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <p class="font-bold">0{ social[index].ID }</p>
+            <h1>{ social[index].TITLE }</h1>
+        </a>
+    ))
+}

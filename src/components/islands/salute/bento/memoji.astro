@@ -1,0 +1,85 @@
+---
+
+interface Props {
+    salute: string[];
+    images: string[];
+}
+
+const { salute, images } = Astro.props
+---
+
+<div
+	id="bento-intro-memoji"
+	class="flex w-full max-w-[746px] col-span-3 row-span-5 flex-col flex-grow items-start gap-x-8 gap-y-8 p-12 rounded-3xl max-mdd:max-w-none max-md:p-8 bg-slate-50/30 dark:bg-slate-900/30 backdrop-blur-[98px]"
+>
+	<images
+		id="memoji"
+		class="flex w-[40%] h-auto aspect-square max-w-[140px] max-h-[140px] overflow-hidden rounded-full border-none relative cursor-pointer hover:-translate-x-2 hover:-translate-y-2 justify-center items-center align-middle transition-all transform-gpu duration-200 ease-in-out"
+	>
+		<img 
+			id="memoji-front"
+			class="w-[100%] h-[100%] absolute flex top-0 left-0 right-0 bottom-0 bg-cover bg-no-repeat bg-center z-50"
+			src={ images[0] }
+			alt="That's me!"
+		/>
+		<img
+			id="back"
+			class="w-full h-full bg-cover bg-no-repeat bg-center opacity-70 sepia-0"
+			src={ images[1] }
+			alt="That's me!"
+		/>
+		<div class="glass" />
+	</images>
+	<div
+		id="salute"
+		class="w-full h-auto text-[24px] md:text-[30px] lg:text-[34px] xl:text-[38px] inline-flex flex-wrap relative left-0 right-0 justify-start items-start align-middle gap-x-4 leading-tight transition-all duration-200 ease-in-out z-50"
+	>
+		<p class="font-medium w-auto h-auto flex">
+			{ salute[0] }
+		</p>
+		<p class="font-bold w-auto h-auto flex">
+			{ salute[1] }
+		</p>
+		<p class="font-bold w-auto h-auto flex">
+			{ salute[2] }
+		</p>
+		<p class="font-bold w-auto h-auto flex">
+			{ salute[3] }
+		</p>
+		<p class="font-bold w-auto h-auto flex">
+			{ salute[4] }
+		</p>
+		<p class="text-black/70 dark:text-white/60 font-medium dark:font-normal w-auto h-auto flex">
+			{ salute[5] }
+		</p>
+	</div>
+</div>
+
+<style 
+	lang="scss" 
+	scoped
+>
+
+	:root {
+		--color-2: #b39e7925;
+		--color-3: #ffffff15;
+	}
+	
+	.glass {
+		background: linear-gradient(
+			90deg,
+			transparent,
+			transparent 0.75rem,
+			var(--color-3) 2rem
+		);
+		background-size: 2.5rem 100%;
+		height: 100%;
+		width: 80%;
+		backdrop-filter: blur(.65rem);
+		filter: contrast(1.35);
+		position: absolute;
+		z-index: 49;
+		inset: 0;
+	}
+	
+</style>
