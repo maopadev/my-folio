@@ -23,12 +23,11 @@ const { contact } = Astro.props
 			{ contact[0] }
 		</h1>
 	</section>
-	<a
-		id="go-contact"
-		class="w-full h-auto text-[16px] font-medium inline-flex flex-wrap relative left-0 right-0 justify-center items-center align-middle px-4 p-[0.7rem] bg-leaf text-white rounded-3xl leading-tight duration-200 ease-in-out z-50 hover:-translate-x-1 hover:-translate-y-1 transition-transform"
-		href={`mailto:${ contact[2] }`}
-		aria-label="Contact me"
+	<button
+		name="contact"
+		aria-label="Send me a email!"
+		class="w-full h-auto text-[20px] font-medium inline-flex flex-wrap relative left-0 right-0 justify-center items-center align-middle px-4 p-[1rem] bg-leaf text-white rounded-3xl leading-tight duration-200 ease-in-out z-50 hover:-translate-x-1 hover:-translate-y-1 transition-transform"
 	>
 		{ contact[1] }
-	</a>
+	</button>
 </div>
