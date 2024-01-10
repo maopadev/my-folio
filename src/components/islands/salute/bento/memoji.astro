@@ -10,18 +10,22 @@ const { salute, images } = Astro.props
 
 <div
 	id="bento-intro-memoji"
-	class="flex w-full max-w-[746px] col-span-3 row-span-5 flex-col flex-grow items-start gap-x-8 gap-y-8 p-12 rounded-3xl max-mdd:max-w-none max-md:p-8 bg-slate-50/30 dark:bg-slate-900/30 backdrop-blur-[98px]"
+	class="flex w-full max-w-[746px] lg:h-full col-span-3 row-span-5 flex-col flex-grow items-start gap-x-8 gap-y-8 p-12 rounded-3xl max-mdd:max-w-none max-md:p-8 bg-slate-50/30 dark:bg-slate-900/30 backdrop-blur-[98px]"
 >
 	<images
 		id="memoji"
 		class="flex w-[40%] h-auto aspect-square max-w-[140px] max-h-[140px] overflow-hidden rounded-full border-none relative cursor-pointer hover:-translate-x-2 hover:-translate-y-2 justify-center items-center align-middle transition-all transform-gpu duration-200 ease-in-out"
 	>
-		<img 
-			id="memoji-front"
-			class="w-[100%] h-[100%] absolute flex top-0 left-0 right-0 bottom-0 bg-cover bg-no-repeat bg-center z-50"
-			src={ images[0] }
-			alt="That's me!"
-		/>
+		<div
+			class="w-full h-[100%] flex absolute left-0 right-0 justify-center items-center z-50"
+		>
+			<img 
+				id="memoji-front"
+				class="w-[80%] h-[80%] max-w-[120px] aspect-square relative flex top-0 left-0 right-0 bottom-0 justify-center items-center align-middle z-50"
+				src={ images[0] }
+				alt="That's me!"
+			/>
+		</div>
 		<img
 			id="back"
 			class="w-full h-full bg-cover bg-no-repeat bg-center opacity-70 sepia-0"

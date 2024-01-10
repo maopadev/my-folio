@@ -19,9 +19,24 @@ const { salute, images, social, contact } = Astro.props
 
 <grid
 	id="bento"
-	class="w-auto h-auto grid grid-cols-3 lg:grid-cols-6 xl:grid-cols-7 grid-rows-auto gap-4 relative left-0 right-0 mx-auto py-12 flex-wrap justify-center items-center align-middle z-50"
+	class="w-auto h-auto grid grid-cols-3 lg:grid-cols-6 xl:grid-cols-7 grid-rows-auto auto-rows-auto gap-4 relative left-0 right-0 mx-auto py-12 flex-wrap justify-center items-center align-middle z-50"
 >
 	<MemojiBentoItem {salute} {images} />
 	<ContactBentoItem {contact} />
 	<SocialsBentoItem {social} />
+	<div
+		id="bento-04"
+		class="flex w-full lg:col-start-4 flex-col gap-x-8 gap-y-8 p-12 rounded-3xl max-mdd:max-w-none max-md:p-8 bg-slate-50/30 dark:bg-slate-900/30 backdrop-blur-[98px] justify-start items-start md:items-center align-middle transition-all duration-200 ease-in-out"
+	>
+	</div>
+	<div
+		id="bento-05"
+		class="flex w-full lg:col-start-5 flex-col gap-x-8 gap-y-8 p-12 rounded-3xl max-mdd:max-w-none max-md:p-8 bg-slate-50/30 dark:bg-slate-900/30 backdrop-blur-[98px] justify-start items-start md:items-center align-middle transition-all duration-200 ease-in-out"
+	>
+	</div>
+	<div
+		id="bento-06"
+		class="flex w-full h-full col-span-2 row-span-4 lg:row-start-3 lg:col-start-6 flex-col gap-x-8 gap-y-8 p-12 rounded-3xl max-mdd:max-w-none max-md:p-8 bg-slate-50/30 dark:bg-slate-900/30 backdrop-blur-[98px] justify-start items-start md:items-center align-middle transition-all duration-200 ease-in-out"
+	>
+	</div>
 </grid>
