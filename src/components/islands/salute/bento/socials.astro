@@ -12,18 +12,28 @@ const { social } = Astro.props
 
 ---
 
-{
-    [[6,1],[6,2],[7,1]].map((position, index) => (
-        <a
-            id={`bento-social-${index}`}
-            class={`flex w-full max-w-[500px] col-start-${position[0]} row-start-${position[1]} auto-rows-[5rem] flex-col py-4 px-[32px] rounded-3xl max-mdd:max-w-none max-md:p-8 bg-slate-50/30 dark:bg-slate-900/30 backdrop-blur-[98px] justify-center items-start align-middle hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200 ease-in-out`}
-            href={ social[index].HREF }
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`Social Item ${index}`}
-        >
-            <p class="font-bold text-[18px]">0{ social[index].ID }</p>
-            <h1>{ social[index].TITLE }</h1>
-        </a>
-    ))
-}
+
+<ul
+    id="social-list"
+    class="w-auto h-auto inline-flex flex-wrap justify-start items-center align-middle gap-2"
+>
+    {Array.from(social).map((item, index) => (
+        <li class="w-full h-full max-w-[180px] flex justify-center items-center align-middle">
+            <a
+                id={`bento-social-${index}`}
+                class={`flex w-auto h-auto flex-col gap-y-1 p-2 mx-auto aspect-square rounded-3xl px-12 bg-slate-50/30 dark:bg-slate-900/30 backdrop-blur-[98px] justify-center items-start align-middle hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200 ease-in-out`}
+                href={ item.HREF }
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Social Item ${index}`}
+            >
+                <p class="font-bold text-[18px] md:text-[20px] lg:text-[24px]">
+                    0{ item.ID }
+                    </p>
+                <h1 class="text-[18px] md:text-[20px] lg:text-[24px]">
+                    { item.TITLE }
+                    </h1>
+            </a>
+        </li>
+    ))}
+</ul>

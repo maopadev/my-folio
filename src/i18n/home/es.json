@@ -16,6 +16,7 @@
         "/images/memoji/bg-02.webp",
         "/images/memoji/bg-03.webp"
       ],
+      "DOWNLOAD_CV": ["Descarga mi CV!", ""],
       "PROJECT_IN_YOUR_MIND": ["¿Tienes un proyecto en mente?", "Contacta conmigo!", "mario.ortega.pal@gmail.com"],
       "SOCIAL_LINKS": [
         {
@@ -41,26 +42,16 @@
   "ABOUT": {
     "TEXT": [
       [
-        "Actualmente trabajo como ",
+        "Actualmente con más de 4 años de experiencia. Estoy de ",
         "Full Stack Developer ",
-        "en una empresa de desarrollo de Software con más de 4 años de experiencia. Me encanta aprender nuevas tecnologías y mejorar mis habilidades."
+        "en una empresa de Software realizando tareas de mantenimiento, nuevas aplicaciones y migración de antiguas aplicaciones. También me he propuesto el trabajar en proyectos personales para seguir aprendiendo y mejorar mis habilidades."
       ],
       [
-        "Me gusta trabajar en equipo y compartir mis conocimientos. Siempre estoy dispuesto a ayudar a mis compañeros y a aprender de ellos."
+        "Me gusta trabajar en equipo y compartir mis conocimientos. Siempre estoy dispuesto a ayudar y aprender de mis compañeros. Me considero una persona responsable, organizada y con ganas de aprender."
       ],
       [
-        "Siempre trato de dar un enfoque minimalista, creando sitios web con un diseño simple y claro. También me encanta realizar rediseño de webs existentes."
-      ],
-      [
-        "“Me considero una persona que consigue lo que se propone, ya que creo que los logros son los resultados de las decisiones que se toman“"
+        "En mis desarrollos, en cualquier ambito, siempre trato de dar un enfoque minimalista, creando sitios web con un diseño simple y claro. También me encanta realizar rediseño de webs existentes."
       ]
-    ],
-    "DOWNLOAD_BUTTONS": [
-      {
-        "ID": 1,
-        "TEXT": "Descarga mi CV!",
-        "HREF": ""
-      }
     ]
   },
   "PROJECTS": {
@@ -68,7 +59,8 @@
     "ITEMS": [
       {
         "id": 4,
-        "title": "/favicon.svg",
+        "logo": "/favicon.svg",
+        "title": "Porfolio",
         "background": ["#1F394C", "#2A4F4C"],
         "repository": "https://github.com/maopadev/porfolio",
         "web": "https://maopa.vercel.app/",
@@ -76,21 +68,24 @@
       },
       {
         "id": 3,
-        "title": "/images/advent.webp",
+        "logo": "/images/advent.webp",
+        "title": "Advent",
         "background": ["#FFB732", "#FFCF32"],
         "repository": "https://github.com/maopadev/advent",
         "tags": ["Node", "Testing Mocha"]
       },
       {
         "id": 2,
-        "title": "/images/burnfit.webp",
+        "logo": "/images/burnfit.webp",
+        "title": "Burnfit",
         "background": ["#7133FF", "#21169F"],
         "repository": "https://github.com/maopadev/burnfit-app",
         "tags": ["Kotlin", "Android", "Firebase"]
       },
       {
         "id": 1,
-        "title": "/images/bibliomadrid.webp",
+        "logo": "/images/bibliomadrid.webp",
+        "title": "BiblioMadrid",
         "background": ["#339EFF", "#A8D6FF"],
         "repository": "",
         "tags": ["API REST", "Android", "Primer proyecto"]

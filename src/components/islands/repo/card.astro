@@ -3,6 +3,7 @@
 interface Props {
   mockup: {
     id: number;
+	logo: string;
     title: string;
     background: string[];
     repository?: string;
@@ -27,13 +28,18 @@ const { mockup } = Astro.props
 	>
 		<div
 			id="front"
-			class="w-[80%] h-auto relative flex flex-col left-0 right-0 bottom-0 gap-y-4 flex-wrap justify-center items-start align-middle transition-all transform-gpu duration-200 ease-in-out"
+			class="w-full h-auto relative flex flex-col left-0 right-0 bottom-0 gap-y-8 px-6 p-1 flex-wrap justify-center items-start align-middle transition-all transform-gpu duration-200 ease-in-out"
 		>
-			<img
-				class="w-auto h-auto max-w-[40%] relative flex top-0 left-0 right-0 bottom-0 justify-center items-center align-middle z-50"
-				src={ mockup.title }
-				alt="Porfolio Logo"
-			/>
+			<text class="w-auto h-auto inline-flex flex-wrap gap-x-4 align-middle">
+				<img
+					class="w-auto h-auto max-w-[40%] relative flex top-0 left-0 right-0 bottom-0 justify-center items-center align-middle z-50"
+					src={ mockup.logo }
+					alt="Porfolio Logo"
+				/>
+				<h1 class="w-auto flex justify-center items-center align-middle font-bold text-[16px] md:text-[18px] lg:text-[20px] text-light">
+					{ mockup.title }
+				</h1>
+			</text>
 			<ul class="w-auto h-auto inline-flex flex-wrap gap-2 gap-x-4 justify-start items-center align-middle z-10">
 				{ mockup.tags.map((tag, index) => (
 					<li

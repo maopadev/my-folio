@@ -2,8 +2,7 @@
 
 /// Components Imports
 import Background from "@/components/islands/salute/background.astro"
-import DataWelcomeComponent from "@/components/islands/salute/bento/index.astro"
-import TagsWelcomeComponent from "@/components/islands/salute/tags.astro"
+import BentoComponent from "@/components/islands/salute/bento/index.astro"
 
 /// i18N Imports
 import { getHomeDataInternational } from "@i18n/index.ts"
@@ -20,6 +19,7 @@ let images = [arrMemoji[0], arrMemoji[random === 0 ? 1 : random]]
 let salute = SALUTE.BENTO.NAME_TEXT_ONE
 let social = SALUTE.BENTO.SOCIAL_LINKS
 let contact = SALUTE.BENTO.PROJECT_IN_YOUR_MIND
+let cv = SALUTE.BENTO.DOWNLOAD_CV
 ---
 
 <section 
@@ -30,7 +30,7 @@ let contact = SALUTE.BENTO.PROJECT_IN_YOUR_MIND
 		id="content"
 		class="container w-full max-w-screen-[1440px] flex relative flex-col h-full mx-auto top-16 md:top-14 lg:top-0  lg:py-6 justify-center items-center align-middle gap-y-12 px-4"
 	>
-		<DataWelcomeComponent {salute} {social} {contact} {images} />
+		<BentoComponent {salute} {social} {contact} {images} {cv} />
 	</div>
 	<Background />
 </section>

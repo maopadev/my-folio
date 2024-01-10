@@ -12,12 +12,12 @@ const { PROJECTS } = getHomeDataInternational({ currentLocale })
 
 <section 
 	id="projects"
-	class="w-[100%] h-auto m-auto py-12 md:py-16 lg:py-20 flex flex-col gap-y-24 justify-center items-center align-middle overflow-x-hidden transition-all duration-200 ease-in-out"
+	class="w-[100%] h-auto m-auto flex flex-col gap-y-24 justify-center items-center align-middle overflow-x-hidden transition-all duration-200 ease-in-out"
 >
 	<MarqueeSlideComponent title={PROJECTS.TITLE} />
 	<ul 
 		id="list-works"
-		class="w-auto h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-rows-auto auto-rows-auto gap-8 md:gap-y-12 lg:gap-y-24 justify-center items-center align-middle transform transition-all duration-200 ease-in-out"
+		class="w-auto h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-rows-auto auto-rows-auto gap-8 md:gap-y-12 lg:gap-y-24 pb-32 md:pb-36 lg:pb-44 justify-center items-center align-middle transform transition-all duration-200 ease-in-out"
 	>
 		{ PROJECTS.ITEMS.map(( mockup: any, index) => (
 			<li 

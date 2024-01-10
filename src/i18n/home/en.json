@@ -16,6 +16,7 @@
         "/images/memoji/bg-02.webp",
         "/images/memoji/bg-03.webp"
       ],
+      "DOWNLOAD_CV": ["Descarga mi CV!", ""],
       "PROJECT_IN_YOUR_MIND": ["Do you have a project in mind?", "Contact me!", "mario.ortega.pal@gmail.com"],
       "SOCIAL_LINKS": [
         {
@@ -54,13 +55,6 @@
       [
         "“I consider myself a person who achieves what he sets out to do, since I believe that achievements are the results of the decisions that are made“"
       ]
-    ],
-    "DOWNLOAD_BUTTONS": [
-      {
-        "ID": 1,
-        "TEXT": "Download my CV!",
-        "HREF": ""
-      }
     ]
   },
   "PROJECTS": {
@@ -68,7 +62,8 @@
     "ITEMS": [
       {
         "id": 4,
-        "title": "/favicon.svg",
+        "logo": "/favicon.svg",
+        "title": "Porfolio",
         "background": ["#1F394C", "#2A4F4C"],
         "repository": "https://github.com/maopadev/porfolio",
         "web": "https://maopa.vercel.app/",
@@ -76,24 +71,27 @@
       },
       {
         "id": 3,
-        "title": "/images/advent.webp",
+        "logo": "/images/advent.webp",
+        "title": "Advent",
         "background": ["#FFB732", "#FFCF32"],
         "repository": "https://github.com/maopadev/advent",
         "tags": ["Node", "Testing Mocha"]
       },
       {
         "id": 2,
-        "title": "/images/burnfit.webp",
+        "logo": "/images/burnfit.webp",
+        "title": "Burnfit",
         "background": ["#7133FF", "#21169F"],
         "repository": "https://github.com/maopadev/burnfit-app",
         "tags": ["Kotlin", "Android", "Firebase"]
       },
       {
         "id": 1,
-        "title": "/images/bibliomadrid.webp",
+        "logo": "/images/bibliomadrid.webp",
+        "title": "BiblioMadrid",
         "background": ["#339EFF", "#A8D6FF"],
         "repository": "",
-        "tags": ["API REST", "Android", "First project"]
+        "tags": ["API REST", "Android", "Primer proyecto"]
       }
     ]
   }

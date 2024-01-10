@@ -12,7 +12,7 @@ const { ABOUT } = getHomeDataInternational({ currentLocale })
 
 <section 
 	id="about"
-	class="container w-screen h-auto py-2 md:py-10 lg:py-18 relative flex flex-col gap-y-12 justify-center 
+	class="container w-screen h-auto py-12 md:py-10 lg:py-18 pb-12 lg:pb-16 relative flex flex-col gap-y-12 justify-center 
 	items-center align-middle transition-all duration-200 ease-in-out transform-gpu text-black dark:text-white"
 >
 	<div
@@ -23,15 +23,6 @@ const { ABOUT } = getHomeDataInternational({ currentLocale })
 		<header 
 			class="w-auto h-auto flex flex-col lg:flex-row gap-x-12 gap-y-4 lg:gap-y-0 justity-center items-center align-middle"
 		>
-			<a
-				href={ABOUT.DOWNLOAD_BUTTONS[0].HREF} 
-				target="_blank" 
-				rel="noopener noreferrer"
-				class={`w-auto h-auto flex p-[0.8rem] px-16 rounded-full justify-center items-center align-middle border-2 border-black/80 dark:border-slate-700 hover:border-transparent hover:bg-thunder hover:dark:bg-accent-two hover:-translate-x-1 hover:-translate-y-1 hover:text-black transition-all transform-gpu duration-300 ease-in-out text-[20px] md:text-[22px] lg:text-[24px] text-center font-bold leading-tight`}
-				aria-label="Boton de descarga de CV"
-			>
-				{ABOUT.DOWNLOAD_BUTTONS[0].TEXT}
-			</a>
 			<h1 class="w-full text-[40px] md:text-[44px] lg:text-[52px] text-center">
 				✌️
 			</h1>
