@@ -6,7 +6,6 @@ import MainLayout from '@layouts/main.astro'
 import SalutePageSection from '@components/islands/salute/index.astro'
 import AboutPageSection from '@/components/islands/about/index.astro'
 import ProjectsPageSection from '@components/islands/projects.astro'
-import ContactPageSection from '@components/islands/contact.astro'
 
 /// i18N Imports
 import { getHomeDataInternational } from "@i18n/index.ts"
@@ -18,5 +17,4 @@ const { TITLE } = getHomeDataInternational({ currentLocale })
 		<SalutePageSection />
 		<AboutPageSection />
 		<ProjectsPageSection />
-		<ContactPageSection />
 </MainLayout>
