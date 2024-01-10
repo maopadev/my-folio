@@ -8,11 +8,11 @@ const { text } = Astro.props;
 
 <div 
 	id="about"
-	class="w-full h-auto flex flex-col justify-center items-center align-middle gap-y-24"
+	class="box-border w-full h-auto flex flex-col justify-center items-center align-middle gap-y-24"
 >
 	<p 
 	    id="about-text-intro"
-		class="w-full max-w-[90%] md:max-w-[80%] lg:max-w-[75%] h-auto relative left-0 top-0 text-[16px] md:text-[18px] lg:text-[22px] text-start items-center align-middle text-wrap uppercase font-semibold"
+		class="w-full max-w-[90%] h-auto relative left-0 top-0 text-[16px] md:text-[18px] lg:text-[22px] text-start items-center align-middle text-wrap uppercase font-semibold"
 	>
 		{ text[0][0] }
 		<strong class="italic px-1">
@@ -22,13 +22,13 @@ const { text } = Astro.props;
 	</p>
 	<p 
 		id="about-text-cooperate"
-		class="w-full max-w-[90%] md:max-w-[80%] lg:max-w-[75%] h-auto relative left-0 top-0 text-[16px] md:text-[18px] lg:text-[22px] text-end items-center align-middle text-wrap font-semibold uppercase text-black/60 dark:text-slate-300"
+		class="w-full max-w-[90%] h-auto relative left-0 top-0 text-[16px] md:text-[18px] lg:text-[22px] text-end items-center align-middle text-wrap font-semibold uppercase text-black/60 dark:text-slate-300"
 	>
 		{ text[1] }
 	</p>
 	<p 
 		id="about-text-design"
-		class="w-full max-w-[90%] md:max-w-[80%] lg:max-w-[75%] h-auto relative left-0 top-0 text-[16px] md:text-[18px] lg:text-[22px] text-center items-center align-middle text-wrap font-semibold uppercase text-black/60 dark:text-slate-300"
+		class="w-full max-w-[90%] h-auto relative left-0 top-0 text-[16px] md:text-[18px] lg:text-[22px] text-center items-center align-middle text-wrap font-semibold uppercase text-black/60 dark:text-slate-300"
 	>
 		{ text[2] }
 	</p>

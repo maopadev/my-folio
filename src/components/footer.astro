@@ -4,21 +4,21 @@ let year = new Date().getFullYear();
 ---
 
 <footer 
-    class="w-[100%] h-auto flex flex-col relative top-0 left-0 right-0 pb-4 md:pb-6 lg:pb-12 flex-grow gap-y-4 md:gap-y-10 lg:gap-y-18 justify-center items-center align-middle transition-all duration-200 ease-in-out bg-light dark:bg-dark transform"
+    class="w-[100%] h-auto flex flex-col relative top-0 left-0 right-0 py-6 lg:py-8 flex-grow gap-y-4 md:gap-y-10 lg:gap-y-18 justify-center items-center align-middle shadow-2xl transition-all duration-200 ease-in-out bg-light dark:bg-dark transform z-50"
 >
-    <section class="w-full max-w-screen-xl mx-auto flex flex-col gap-y-4 md:gap-y-6 lg:gap-y-18 justify-center items-center align-middle transition-all duration-200 ease-in-out">
+    <section class="w-full max-w-screen-xl mx-auto flex flex-col gap-y-1 md:gap-y-2 lg:gap-y-3 justify-center items-center align-middle transition-all duration-200 ease-in-out">
         <Logo 
             id="maopa-logo"
             class="flex w-16 lg:w-20 h-auto aspect-square stroke-black/30 dark:stroke-slate-500 stroke-[32]"
         />
         <h1
             id="astro-build"
-            class="inline-flex gap-y-4 md:gap-y-6 lg:gap-y-18 justify-center items-center align-middle transition-all duration-200 ease-in-out text-dark dark:text-slate-500 text-[14px] md:text-[14.5px] lg:text-[15px] font-bold"
+            class="inline-flex gap-y-4 md:gap-y-6 lg:gap-y-18 justify-center items-center align-middle transition-all duration-200 ease-in-out text-slate-700/60 dark:text-slate-500 text-[14px] md:text-[14.5px] lg:text-[15px] font-bold"
         >
             Build with Astro
         </h1>
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © { year } ~maopadev All Rights Reserved.
-        </span>
     </section>
+    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+        © { year } ~maopadev All Rights Reserved.
+    </span>
 </footer>

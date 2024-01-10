@@ -2,7 +2,14 @@
   "TITLE": "> maopa",
   "SALUTE": {
     "BENTO": {
-      "NAME_TEXT_ONE": ["Hola,", "Soy Maopa. ", "Full Stack Developer en activo", "&", "Freelancer. ", "Siempre ayudando!. Actualmente por Madrid."],
+      "NAME_TEXT_ONE": [
+        "Hola,",
+        "Soy Maopa. ",
+        "Full Stack Developer en activo",
+        "&",
+        "Freelancer. ",
+        "Siempre ayudando!. Actualmente por Madrid."
+      ],
       "MEMOJI_ICON": [
         "/images/memoji/maopa.webp",
         "/images/memoji/bg-01.webp",
@@ -61,11 +68,11 @@
     "ITEMS": [
       {
         "id": 4,
-        "title": "/public/favicon.svg",
+        "title": "/favicon.svg",
         "background": ["#1F394C", "#2A4F4C"],
         "repository": "",
         "web": "maopa.vercel.app",
-        "tags": ["Astro", "Tailwind", "Design"]
+        "tags": ["Astro", "Tailwind", "i18n", "UI/UX Design"]
       },
       {
         "id": 3,
