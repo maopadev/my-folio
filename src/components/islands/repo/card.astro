@@ -16,18 +16,21 @@ const { mockup } = Astro.props
 ---
 <a
 	id={`mockup-${mockup.id}`}
-	class="flex w-[22rem] h-[30rem] aspect-[3/2] overflow-hidden rounded-2xl border-none relative cursor-pointer justify-center items-center align-middle transition-all transform-gpu duration-200 ease-in-out"
-	href={ mockup.web || mockup.repository }
+	class="flex w-[22rem] aspect-square overflow-hidden rounded-2xl border-none relative cursor-pointer justify-center items-center align-middle transition-all transform-gpu duration-200 ease-in-out"
+	href={ mockup.web === "" ? mockup.repository : mockup.web }
+	target="_blank"
+    rel="noopener noreferrer"
+    aria-label={`Repo Item ${mockup.id}`}
 >
 	<div
 		class="w-full h-[100%] flex absolute left-0 right-0 justify-center items-center z-50"
 	>
 		<div
 			id="front"
-			class="w-[80%] h-auto relative flex flex-col left-0 right-0 bottom-0 gap-y-2 flex-wrap justify-center items-start align-middle transition-all transform-gpu duration-200 ease-in-out"
+			class="w-[80%] h-auto relative flex flex-col left-0 right-0 bottom-0 gap-y-4 flex-wrap justify-center items-start align-middle transition-all transform-gpu duration-200 ease-in-out"
 		>
 			<img
-				class="w-auto h-auto max-w-[90px] aspect-square relative flex top-0 left-0 right-0 bottom-0 justify-center items-center align-middle z-50"
+				class="w-auto h-auto max-w-[40%] relative flex top-0 left-0 right-0 bottom-0 justify-center items-center align-middle z-50"
 				src={ mockup.title }
 				alt="Porfolio Logo"
 			/>

@@ -70,27 +70,27 @@
         "id": 4,
         "title": "/favicon.svg",
         "background": ["#1F394C", "#2A4F4C"],
-        "repository": "",
-        "web": "maopa.vercel.app",
+        "repository": "https://github.com/maopadev/porfolio",
+        "web": "https://maopa.vercel.app/",
         "tags": ["Astro", "Tailwind", "i18n", "UI/UX Design"]
       },
       {
         "id": 3,
-        "title": "Advent",
+        "title": "/images/advent.webp",
         "background": ["#FFB732", "#FFCF32"],
-        "repository": "",
+        "repository": "https://github.com/maopadev/advent",
         "tags": ["Node", "Testing Mocha"]
       },
       {
         "id": 2,
-        "title": "BurnFit",
+        "title": "/images/burnfit.webp",
         "background": ["#7133FF", "#21169F"],
-        "repository": "",
+        "repository": "https://github.com/maopadev/burnfit-app",
         "tags": ["Kotlin", "Android", "Firebase"]
       },
       {
         "id": 1,
-        "title": "BiblioMadrid",
+        "title": "/images/bibliomadrid.webp",
         "background": ["#339EFF", "#A8D6FF"],
         "repository": "",
         "tags": ["API REST", "Android", "Primer proyecto"]

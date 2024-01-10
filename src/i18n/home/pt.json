@@ -2,14 +2,21 @@
   "TITLE": "> maopa",
   "SALUTE": {
     "BENTO": {
-      "NAME_TEXT_ONE": ["Hola,", "Soy Maopa. ", "Full Stack Developer en activo", "&", "Freelancer. ", "Siempre ayudando!. Actualmente por Madrid."],
+      "NAME_TEXT_ONE": [
+        "Olá!",
+        "Eu sou Maopa. ",
+        "Desenvolvedor Full Stack",
+        "e",
+        "Freelancer. ",
+        "Gosto de resolver problemas!. Atualmente em Madrid."
+      ],
       "MEMOJI_ICON": [
         "/images/memoji/maopa.webp",
         "/images/memoji/bg-01.webp",
         "/images/memoji/bg-02.webp",
         "/images/memoji/bg-03.webp"
       ],
-      "PROJECT_IN_YOUR_MIND": ["¿Tienes un proyecto en mente?", "Contacta conmigo!", "mario.ortega.pal@gmail.com"],
+      "PROJECT_IN_YOUR_MIND": ["Você tem um projeto em mente?", "Entre em contato!", "mario.ortega.pal@gmail.com"],
       "SOCIAL_LINKS": [
         {
           "ID": 1,
@@ -29,64 +36,64 @@
       ]
     },
     "TAGS_PERSONAL": ["Websites", "Apps", "Design", "/1998"],
-    "SCROLL_TEXT": "Desplázate"
+    "SCROLL_TEXT": "Role para baixo!"
   },
   "ABOUT": {
     "TEXT": [
       [
-        "Actualmente trabajo como ",
-        "Full Stack Developer ",
-        "en una empresa de desarrollo de Software con más de 4 años de experiencia. Me encanta aprender nuevas tecnologías y mejorar mis habilidades."
+        "Atualmente trabalho como ",
+        "Desenvolvedor Full Stack ",
+        "em uma empresa de desenvolvimento de software com mais de 4 anos de experiência. Adoro aprender novas tecnologias e aprimorar minhas habilidades."
       ],
       [
-        "Me gusta trabajar en equipo y compartir mis conocimientos. Siempre estoy dispuesto a ayudar a mis compañeros y a aprender de ellos."
+        "Gosto de trabalhar em equipe e compartilhar meu conhecimento. Estou sempre disposto a ajudar meus colegas e aprender com eles."
       ],
       [
-        "Siempre trato de dar un enfoque minimalista, creando sitios web con un diseño simple y claro. También me encanta realizar rediseño de webs existentes."
+        "Sempre tento adotar uma abordagem minimalista, criando sites com um design simples e claro. Também adoro redesenhar sites existentes."
       ],
       [
-        "“Me considero una persona que consigue lo que se propone, ya que creo que los logros son los resultados de las decisiones que se toman“"
+        "“Me considero uma pessoa que alcança o que se propõe a fazer, pois acredito que as conquistas são resultados das decisões que são tomadas“"
       ]
     ],
     "DOWNLOAD_BUTTONS": [
       {
         "ID": 1,
-        "TEXT": "Descarga mi CV!",
+        "TEXT": "Baixe meu CV!",
         "HREF": ""
       }
     ]
   },
   "PROJECTS": {
-    "TITLE": "Explora mis proyectos",
+    "TITLE": "Explore meus projetos",
     "ITEMS": [
       {
         "id": 4,
-        "title": "/public/favicon.svg",
+        "title": "/favicon.svg",
         "background": ["#1F394C", "#2A4F4C"],
-        "repository": "",
-        "web": "maopa.vercel.app",
-        "tags": ["Astro", "Tailwind", "Design"]
+        "repository": "https://github.com/maopadev/porfolio",
+        "web": "https://maopa.vercel.app/",
+        "tags": ["Astro", "Tailwind", "i18n", "UI/UX Design"]
       },
       {
         "id": 3,
-        "title": "Advent",
+        "title": "/images/advent.webp",
         "background": ["#FFB732", "#FFCF32"],
-        "repository": "",
+        "repository": "https://github.com/maopadev/advent",
         "tags": ["Node", "Testing Mocha"]
       },
       {
         "id": 2,
-        "title": "BurnFit",
+        "title": "/images/burnfit.webp",
         "background": ["#7133FF", "#21169F"],
-        "repository": "",
+        "repository": "https://github.com/maopadev/burnfit-app",
         "tags": ["Kotlin", "Android", "Firebase"]
       },
       {
         "id": 1,
-        "title": "BiblioMadrid",
+        "title": "/images/bibliomadrid.webp",
         "background": ["#339EFF", "#A8D6FF"],
         "repository": "",
-        "tags": ["API REST", "Android", "Primer proyecto"]
+        "tags": ["API REST", "Android", "Primeiro projeto"]
       }
     ]
   }

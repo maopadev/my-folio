@@ -2,14 +2,21 @@
   "TITLE": "> maopa",
   "SALUTE": {
     "BENTO": {
-      "NAME_TEXT_ONE": ["Hola,", "Soy Maopa. ", "Full Stack Developer en activo", "&", "Freelancer. ", "Siempre ayudando!. Actualmente por Madrid."],
+      "NAME_TEXT_ONE": [
+        "Hello There!",
+        "I'm Maopa. ",
+        "Full Stack Developer",
+        "&",
+        "Freelancer. ",
+        "Enjoy to solving problems!. Currently in Madrid."
+      ],
       "MEMOJI_ICON": [
         "/images/memoji/maopa.webp",
         "/images/memoji/bg-01.webp",
         "/images/memoji/bg-02.webp",
         "/images/memoji/bg-03.webp"
       ],
-      "PROJECT_IN_YOUR_MIND": ["¿Tienes un proyecto en mente?", "Contacta conmigo!", "mario.ortega.pal@gmail.com"],
+      "PROJECT_IN_YOUR_MIND": ["Do you have a project in mind?", "Contact me!", "mario.ortega.pal@gmail.com"],
       "SOCIAL_LINKS": [
         {
           "ID": 1,
@@ -29,64 +36,64 @@
       ]
     },
     "TAGS_PERSONAL": ["Websites", "Apps", "Design", "/1998"],
-    "SCROLL_TEXT": "Desplázate"
+    "SCROLL_TEXT": "Scroll It!"
   },
   "ABOUT": {
     "TEXT": [
       [
-        "Actualmente trabajo como ",
+        "I'm currently working as a ",
         "Full Stack Developer ",
-        "en una empresa de desarrollo de Software con más de 4 años de experiencia. Me encanta aprender nuevas tecnologías y mejorar mis habilidades."
+        "in a Software development company with more than 4 years of experience. I love learning new technologies and improving my skills."
       ],
       [
-        "Me gusta trabajar en equipo y compartir mis conocimientos. Siempre estoy dispuesto a ayudar a mis compañeros y a aprender de ellos."
+        "I like to work in a team and share my knowledge. I'm always willing to help my colleagues and learn from them."
       ],
       [
-        "Siempre trato de dar un enfoque minimalista, creando sitios web con un diseño simple y claro. También me encanta realizar rediseño de webs existentes."
+        "I always try to give a minimalist approach, creating websites with a simple and clear design. I also love to redesign existing websites."
       ],
       [
-        "“Me considero una persona que consigue lo que se propone, ya que creo que los logros son los resultados de las decisiones que se toman“"
+        "“I consider myself a person who achieves what he sets out to do, since I believe that achievements are the results of the decisions that are made“"
       ]
     ],
     "DOWNLOAD_BUTTONS": [
       {
         "ID": 1,
-        "TEXT": "Descarga mi CV!",
+        "TEXT": "Download my CV!",
         "HREF": ""
       }
     ]
   },
   "PROJECTS": {
-    "TITLE": "Explora mis proyectos",
+    "TITLE": "Explore my projects",
     "ITEMS": [
       {
         "id": 4,
-        "title": "/public/favicon.svg",
+        "title": "/favicon.svg",
         "background": ["#1F394C", "#2A4F4C"],
-        "repository": "",
-        "web": "maopa.vercel.app",
-        "tags": ["Astro", "Tailwind", "Design"]
+        "repository": "https://github.com/maopadev/porfolio",
+        "web": "https://maopa.vercel.app/",
+        "tags": ["Astro", "Tailwind", "i18n", "UI/UX Design"]
       },
       {
         "id": 3,
-        "title": "Advent",
+        "title": "/images/advent.webp",
         "background": ["#FFB732", "#FFCF32"],
-        "repository": "",
+        "repository": "https://github.com/maopadev/advent",
         "tags": ["Node", "Testing Mocha"]
       },
       {
         "id": 2,
-        "title": "BurnFit",
+        "title": "/images/burnfit.webp",
         "background": ["#7133FF", "#21169F"],
-        "repository": "",
+        "repository": "https://github.com/maopadev/burnfit-app",
         "tags": ["Kotlin", "Android", "Firebase"]
       },
       {
         "id": 1,
-        "title": "BiblioMadrid",
+        "title": "/images/bibliomadrid.webp",
         "background": ["#339EFF", "#A8D6FF"],
         "repository": "",
-        "tags": ["API REST", "Android", "Primer proyecto"]
+        "tags": ["API REST", "Android", "First project"]
       }
     ]
   }
