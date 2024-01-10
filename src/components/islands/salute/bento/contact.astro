@@ -15,10 +15,12 @@ const { contact } = Astro.props
 	class="flex w-full md:max-w-[500px] h-full col-span-3 md:col-span-2 row-span-4 lg:col-start-4 flex-col gap-x-8 gap-y-8 p-12 rounded-3xl max-mdd:max-w-none max-md:p-8 bg-slate-50/30 dark:bg-slate-900/30 backdrop-blur-[98px] justify-start items-start md:items-center align-middle transition-all duration-200 ease-in-out"
 >
 	<section>
-		<ContactIcon class="w-auto h-auto stroke-[4] stroke-leaf dark:stroke-white transition-all duration-200 ease-in-out" />
+		<ContactIcon 
+			class="w-auto h-auto stroke-[4] stroke-leaf dark:stroke-white transition-all duration-200 ease-in-out" 
+		/>
 		<h1
 			id="bento-contact-title"
-			class="w-auto h-auto flex flex-grow flex-wrap relative left-0 right-0 justify-center items-center align-middle gap-x-4 leading-tight transition-all duration-200 ease-in-out z-50 text-[32px] font-semibold text-black dark:text-white"
+			class="w-auto h-auto flex flex-grow flex-wrap relative left-0 right-0 justify-center items-center align-middle gap-x-4 leading-tight transition-all duration-200 ease-in-out z-50 text-[24px] md:text-[26px] lg:text-[30px] font-semibold text-black dark:text-white"
 		>
 			{ contact[0] }
 		</h1>
@@ -26,7 +28,7 @@ const { contact } = Astro.props
 	<button
 		name="contact"
 		aria-label="Send me a email!"
-		class="w-full h-auto text-[20px] font-medium inline-flex flex-wrap relative left-0 right-0 justify-center items-center align-middle px-4 p-[1rem] bg-leaf text-white rounded-3xl leading-tight duration-200 ease-in-out z-50 hover:-translate-x-1 hover:-translate-y-1 transition-transform"
+		class="w-full h-auto text-[20px] md:text-[22px] lg:text-[24px] font-medium inline-flex flex-wrap relative left-0 right-0 justify-center items-center align-middle px-4 p-[1rem] bg-leaf text-white rounded-3xl leading-tight duration-200 ease-in-out z-50 hover:-translate-x-1 hover:-translate-y-1 transition-transform"
 	>
 		{ contact[1] }
 	</button>

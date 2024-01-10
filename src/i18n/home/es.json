@@ -51,9 +51,8 @@
     "DOWNLOAD_BUTTONS": [
       {
         "ID": 1,
-        "TEXT": "Descargar CV",
-        "HREF": "",
-        "COLOR": "#A5FFC9"
+        "TEXT": "Descarga mi CV!",
+        "HREF": ""
       }
     ]
   },

@@ -3,28 +3,20 @@ import Logo from "@components/logo.astro"
 let year = new Date().getFullYear();
 ---
 
-<footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
-    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
-            <Logo class="flex w-24 stroke-black dark:stroke-slate-500 stroke-[32] items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse" />
-            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-                <li>
-                    <a aria-label="" href="#" class="hover:underline me-4 md:me-6">About</a>
-                </li>
-                <li>
-                    <a aria-label="" href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-                </li>
-                <li>
-                    <a aria-label="" href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-                </li>
-                <li>
-                    <a aria-label="" href="#" class="hover:underline">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+<footer class="container w-full h-auto flex py-12 bg-light dark:bg-dark justify-center items-center align-middle z-10">
+    <section class="w-full max-w-screen-xl mx-auto flex flex-col gap-y-4 md:gap-y-6 lg:gap-y-18 justify-center items-center align-middle transition-all duration-200 ease-in-out">
+        <Logo 
+            id="maopa-logo"
+            class="flex w-16 lg:w-20 h-auto aspect-square stroke-black/30 dark:stroke-slate-500 stroke-[32]"
+        />
+        <h1
+            id="astro-build"
+            class="inline-flex gap-y-4 md:gap-y-6 lg:gap-y-18 justify-center items-center align-middle transition-all duration-200 ease-in-out text-dark dark:text-slate-500 text-[14px] md:text-[14.5px] lg:text-[15px] font-bold"
+        >
+            Build with Astro
+        </h1>
         <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © { year } ~maopadev All Rights Reserved.
         </span>
-    </div>
+    </section>
 </footer>
