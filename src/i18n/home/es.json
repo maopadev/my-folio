@@ -60,38 +60,34 @@
     "TITLE": "Explora mis proyectos",
     "ITEMS": [
       {
-        "ID": 1,
-        "TITLE": "BurnFit",
-        "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
-        "BACKGROUND": "/src/assets/images/running.webp",
-        "REPOSITORY": "",
-        "WEB": "",
-        "TAGS": [52, 53, 49, 36, 48]
-      },
-      {
-        "id": 2,
-        "title": "Proyecto 2",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
-        "image": "https://picsum.photos/200/300",
-        "href": ""
+        "id": 4,
+        "title": "/public/favicon.svg",
+        "background": ["#1F394C", "#2A4F4C"],
+        "repository": "",
+        "web": "maopa.vercel.app",
+        "tags": ["Astro", "Tailwind", "Design"]
       },
       {
         "id": 3,
-        "title": "Proyecto 3",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
-        "image": "https://picsum.photos/200/300",
-        "href": ""
+        "title": "Advent",
+        "background": ["#FFB732", "#FFCF32"],
+        "repository": "",
+        "tags": ["Node", "Testing Mocha"]
+      },
+      {
+        "id": 2,
+        "title": "BurnFit",
+        "background": ["#7133FF", "#21169F"],
+        "repository": "",
+        "tags": ["Kotlin", "Android", "Firebase"]
+      },
+      {
+        "id": 1,
+        "title": "BiblioMadrid",
+        "background": ["#339EFF", "#A8D6FF"],
+        "repository": "",
+        "tags": ["API REST", "Android", "Primer proyecto"]
       }
     ]
-  },
-  "contact": {
-    "title": "Contacto",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl. Nulla euismod, nisl vitae aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam elit nisl vitae nisl.",
-    "form": {
-      "name": "Nombre",
-      "email": "Email",
-      "message": "Mensaje",
-      "send": "Enviar"
-    }
   }
 }
