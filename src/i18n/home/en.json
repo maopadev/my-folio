@@ -22,17 +22,20 @@
         {
           "ID": 1,
           "HREF": "https://github.com/maopadev",
-          "TITLE": "Github"
+          "TITLE": "Visit my profile",
+          "ICONS": "/images/icons/github.svg"
         },
         {
           "ID": 2,
-          "HREF": "https://threads.com/@maopadev",
-          "TITLE": "Threads"
+          "HREF": "https://threads.net/maopadev",
+          "TITLE": "Threads",
+          "ICONS": "/images/icons/threads.svg"
         },
         {
           "ID": 3,
           "HREF": "",
-          "TITLE": "Behance"
+          "TITLE": "Behance",
+          "ICONS": "/images/icons/behance.svg"
         }
       ]
     },
