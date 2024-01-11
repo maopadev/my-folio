@@ -22,17 +22,20 @@
         {
           "ID": 1,
           "HREF": "https://github.com/maopadev",
-          "TITLE": "Github"
+          "TITLE": "Visita mi perfil",
+          "ICONS": "/images/icons/github.svg"
         },
         {
           "ID": 2,
-          "HREF": "https://threads.com/@maopadev",
-          "TITLE": "Threads"
+          "HREF": "https://threads.net/maopadev",
+          "TITLE": "Threads",
+          "ICONS": "/images/icons/threads.svg"
         },
         {
           "ID": 3,
           "HREF": "",
-          "TITLE": "Behance"
+          "TITLE": "Behance",
+          "ICONS": "/images/icons/behance.svg"
         }
       ]
     },
@@ -47,10 +50,10 @@
         "en una empresa de Software realizando tareas de mantenimiento, nuevas aplicaciones y migración de antiguas aplicaciones. También me he propuesto el trabajar en proyectos personales para seguir aprendiendo y mejorar mis habilidades."
       ],
       [
-        "Me gusta trabajar en equipo y compartir mis conocimientos. Siempre estoy dispuesto a ayudar y aprender de mis compañeros. Me considero una persona responsable, organizada y con ganas de aprender."
+        "Me gusta trabajar en equipo y compartir mis conocimientos. Siempre estoy dispuesto a ayudar y aprender de mis compañeros. Me considero una persona responsable, organizada y con ganas de aprender. En mis desarrollos, en cualquier ambito, siempre trato de dar un enfoque minimalista, creando sitios web con un diseño simple y claro."
       ],
       [
-        "En mis desarrollos, en cualquier ambito, siempre trato de dar un enfoque minimalista, creando sitios web con un diseño simple y claro. También me encanta realizar rediseño de webs existentes."
+        " También me encanta realizar rediseño de webs existentes."
       ]
     ]
   },

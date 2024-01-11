@@ -5,6 +5,7 @@ interface Props {
         ID: number;
         TITLE: string;
         HREF: string;
+        ICONS: string;
     }[];
 }
 
@@ -13,27 +14,58 @@ const { social } = Astro.props
 ---
 
 
-<ul
-    id="social-list"
-    class="w-auto h-auto inline-flex flex-wrap justify-start items-center align-middle gap-2"
+<div
+	id="bento-contact-container"
+	class="flex w-auto h-auto max-mdd:max-w-none justify-start items-start align-middle transition-all duration-200 ease-in-out"
 >
-    {Array.from(social).map((item, index) => (
-        <li class="w-full h-full max-w-[180px] flex justify-center items-center align-middle">
-            <a
-                id={`bento-social-${index}`}
-                class={`flex w-auto h-auto flex-col gap-y-1 p-2 mx-auto aspect-square rounded-3xl px-12 bg-slate-50/30 dark:bg-slate-900/30 backdrop-blur-[98px] justify-center items-start align-middle hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200 ease-in-out`}
-                href={ item.HREF }
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Social Item ${index}`}
-            >
-                <p class="font-bold text-[18px] md:text-[20px] lg:text-[24px]">
-                    0{ item.ID }
-                    </p>
-                <h1 class="text-[18px] md:text-[20px] lg:text-[24px]">
-                    { item.TITLE }
-                    </h1>
-            </a>
-        </li>
-    ))}
-</ul>
+    <ul
+        id="bento-social-container"
+        class="flex w-auto h-auto flex-row flex-wrap gap-6 justify-center items-center align-middle"
+    >
+        { Array.from(social).map((item, index) => (
+            ((index === 0) 
+                ? (
+                    <li 
+                        class="flex w-auto h-auto mx-auto justify-center rounded-full items-center align-middle z-10 drop-shadow-2xl"
+                    >
+                        <a
+                            id={`bento-social-${index}`}
+                            class={`flex w-auto h-auto px-6 py-4 gap-x-6 rounded-full flex-row relative left-0 right-0 bg-gradient-to-tr from-slate-400/10 dark:from-slate-80/10 from-10% to-gray-300/30 dark:to-slate-600/20 backdrop-blur-[98px] justify-center items-center align-middle hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200 ease-in-out`}
+                            href={ item.HREF }
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`Social Item ${index}`}
+                        >
+                            <img
+                                src={ item.ICONS }
+                                alt="Elemento"
+                                class="flex w-[3rem] aspect-square max-w-full max-h-full justify-center items-center align-middle"
+                            />
+                            <h1 class="font-semibold text-[18px]">
+                                { item.TITLE }
+                            </h1>
+                        </a>
+                    </li>
+                ) : (
+                    <li 
+                        class="flex w-[5rem] aspect-square mx-auto justify-center rounded-full items-center align-middle z-10 drop-shadow-2xl"
+                    >
+                        <a
+                            id={`bento-social-${index}`}
+                            class={`flex w-full h-full p-6 rounded-full flex-row relative left-0 right-0 bg-gradient-to-tr from-slate-400/10 dark:from-slate-80/10 from-10% to-gray-300/30 dark:to-slate-600/20 backdrop-blur-[98px] justify-center items-center align-middle hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200 ease-in-out`}
+                            href={ item.HREF }
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`Social Item ${index}`}
+                        >
+                            <img
+                                src={ item.ICONS }
+                                alt="Elemento"
+                                class="flex w-auto h-auto max-w-full max-h-full justify-center items-center align-middle"
+                            />
+                        </a>
+                    </li>
+                ))
+        ))}
+    </ul>
+</div>

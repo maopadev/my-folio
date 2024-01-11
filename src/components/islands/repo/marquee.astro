@@ -11,14 +11,14 @@ const { title } = Astro.props;
 >
 	<ul class="w-auto py-2 md:py-4 lg:py-6 animate-marquee whitespace-nowrap z-0 uppercase">
         { Array.from({ length: 5 }).map((_) => (
-            <span class="text-[50px] md:text-[54px] lg:text-[57px] xl:text-[62px] font-black text-slate-500/60 px-4">
+            <span class="font-climate text-[5rem] md:text-[6rem] lg:text-[7rem] xl:text-[8rem] font-normal tracking-wide text-slate-300/60 dark:text-slate-700/80 px-4">
                 { title } ///
             </span>
         ))}
 	</ul>
 	<text class="w-auto absolute top-0 py-2 md:py-4 lg:py-6 animate-marquee2 whitespace-nowrap z-10 uppercase">
 		{ Array.from({ length: 5 }).map((_) => (
-            <span class="text-[50px] md:text-[46px] lg:text-[50px] xl:text-[62px] font-bold text-slate-500/60 px-4">
+            <span class="font-climate text-[5rem] md:text-[6rem] lg:text-[7rem] xl:text-[8rem] font-normal tracking-wide text-slate-300/60 dark:text-slate-700/80 px-4">
                 { title } ///
             </span>
         ))}

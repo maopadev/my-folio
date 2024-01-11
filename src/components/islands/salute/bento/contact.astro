@@ -13,15 +13,15 @@ const { contact, cv } = Astro.props
 
 <div
 	id="bento-contact-container"
-	class="w-auto h-auto flex flex-col justify-center items-center align-middle gap-y-8 transition-all duration-200 ease-in-out"
+	class="flex w-full md:max-w-[380px] lg:max-w-[400px] lg:h-full flex-col flex-grow gap-4 rounded-3xl max-mdd:max-w-none justify-center items-start align-middle transition-all duration-200 ease-in-out"
 >
 	<div
 		id="bento-contact"
-		class="flex w-full md:max-w-[300px] lg:max-w-[400px] h-auto flex-col gap-x-8 gap-y-8 p-12 rounded-3xl max-mdd:max-w-none max-md:p-8 bg-slate-50/30 dark:bg-slate-900/30 backdrop-blur-[98px] justify-start items-start align-middle transition-all duration-200 ease-in-out"
+		class="flex w-full h-auto flex-col gap-x-8 gap-y-8 p-12 rounded-3xl z-10 drop-shadow-2xl justify-start items-start align-middle transition-all duration-200 ease-in-out bg-gradient-to-l from-slate-400/10 dark:from-slate-80/10 from-10% to-gray-300/30 dark:to-slate-600/20 backdrop-blur-[98px]"
 	>
 		<section>
-			<ContactIcon 
-				class="w-auto h-auto stroke-[4] stroke-leaf dark:stroke-white transition-all duration-200 ease-in-out" 
+			<ContactIcon
+				class="w-auto h-auto stroke-[4] stroke-lime-500/80 dark:stroke-white transition-all duration-200 ease-in-out" 
 			/>
 			<h1
 				id="bento-contact-title"
@@ -38,18 +38,13 @@ const { contact, cv } = Astro.props
 			{ contact[1] }
 		</button>
 	</div>
-	<div
-		id="bento-contact-cv"
-		class=""
+	<a
+		href={cv[1]} 
+		target="_blank" 
+		rel="noopener noreferrer"
+		class="flex w-full h-[7rem] flex-row gap-x-8 p-[0.8rem] px-16 z-10 drop-shadow-2xl rounded-3xl justify-center items-center align-middle bg-gradient-to-l from-slate-400/10 dark:from-leaf/10 from-10% to-gray-300/30 dark:to-leaf/20 backdrop-blur-[98px] hover:text-white dark:hover:text-white hover:bg-lime-300/80 hover:dark:bg-lime-300/80 md:hover:-translate-x-1 hover:-translate-y-1 transform transition-all duration-200 ease-in-out"
+		aria-label="Boton de descarga de CV"
 	>
-		<a
-			href={cv[1]} 
-			target="_blank" 
-			rel="noopener noreferrer"
-			class={`w-auto h-auto flex p-[0.8rem] px-16 rounded-full justify-center items-center align-middle border-2 border-black/80 dark:border-slate-700 hover:border-transparent hover:bg-thunder hover:dark:bg-accent-two hover:-translate-x-1 hover:-translate-y-1 hover:text-black transition-all transform-gpu duration-300 ease-in-out text-[20px] md:text-[22px] lg:text-[24px] text-center font-bold leading-tight`}
-			aria-label="Boton de descarga de CV"
-		>
-			{cv[0]}
-		</a>
-	</div>
+		<h1 class="text-[22px] md:text-[24px] lg:text-[26px] text-start leading-tight font-semibold">{cv[0]}</h1>
+	</a>
 </div>

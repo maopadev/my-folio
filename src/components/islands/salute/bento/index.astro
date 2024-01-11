@@ -5,6 +5,7 @@ interface Props {
 		ID: number;
 		HREF: string;
 		TITLE: string;
+		ICONS: string;
 	}[];
 	contact: string[];
 	images: string[];
@@ -14,30 +15,22 @@ interface Props {
 import MemojiBentoItem from "@components/islands/salute/bento/memoji.astro"
 import ContactBentoItem from "@components/islands/salute/bento/contact.astro"
 import SocialsBentoItem from "@components/islands/salute/bento/socials.astro"
+import SkillsBentoItem from "@components/islands/salute/bento/skills.astro"
 
 const { salute, images, social, contact, cv } = Astro.props
 ---
 
 <grid
 	id="bento"
-	class="w-full h-full inline-flex gap-4 relative left-0 right-0 md:top-4 lg:top-8 mx-auto py-24 flex-wrap justify-center items-start align-middle z-50"
+	class="w-full h-full inline-flex gap-4 relative left-0 right-0 top-0 mx-auto py-8 md:py-10 lg:py-28 flex-wrap justify-center items-start align-middle z-50"
 >
 	<MemojiBentoItem {salute} {images} />
 	<ContactBentoItem {contact} {cv} />
-	<SocialsBentoItem {social} />
 	<div
-		id="bento-04"
-		class="hidden w-full lg:col-start-4 flex-col gap-x-8 gap-y-8 p-12 rounded-3xl max-mdd:max-w-none max-md:p-8 bg-slate-50/30 dark:bg-slate-900/30 backdrop-blur-[98px] justify-start items-start md:items-center align-middle transition-all duration-200 ease-in-out"
+		id="ss-section"
+		class="w-auto h-auto flex flex-col justify-center items-center gap-6"
 	>
-	</div>
-	<div
-		id="bento-05"
-		class="hidden w-full lg:col-start-4 flex-col gap-x-8 gap-y-8 p-12 rounded-3xl max-mdd:max-w-none max-md:p-8 bg-slate-50/30 dark:bg-slate-900/30 backdrop-blur-[98px] justify-start items-start md:items-center align-middle transition-all duration-200 ease-in-out"
-	>
-	</div>
-	<div
-		id="bento-06"
-		class="hidden w-full h-full col-span-2 row-span-4 lg:row-start-3 lg:col-start-5 flex-col gap-x-8 gap-y-8 p-12 rounded-3xl max-mdd:max-w-none max-md:p-8 bg-slate-50/30 dark:bg-slate-900/30 backdrop-blur-[98px] justify-start items-start md:items-center align-middle transition-all duration-200 ease-in-out"
-	>
+		<SocialsBentoItem {social} />
+		<SkillsBentoItem />
 	</div>
 </grid>

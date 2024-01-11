@@ -1,0 +1,29 @@
+---
+
+import Logo from "@components/logo.astro"
+import ReactLogo from "@components/icons/react.astro"
+import AstroLogo from "@components/icons/rocket.astro"
+import VSCodeLogo from "@components/icons/vscode.astro"
+
+---
+
+<section
+    class="container flex w-full md:max-w-[350px] lg:max-w-[450px] xl:max-w-[500px] h-[360px] flex-col flex-grow justify-center items-start gap-x-8 gap-y-8 p-12 z-10 drop-shadow-2xl rounded-3xl max-mdd:max-w-none max-md:p-8 bg-gradient-to-r from-slate-400/10 dark:from-slate-80/10 from-10% to-gray-300/30 dark:to-slate-600/20 backdrop-blur-[98px] hover:-translate-x-1 hover:-translate-y-1 transform transition-all duration-300 ease-in-out"
+>
+    <div class="w-auto h-auto flex absolute -left-4 right-0 top-0 bottom-8 justify-center items-center align-middle z-10">
+        <Logo class="flex w-78 h-auto stroke-white dark:stroke-slate-600 stroke-[32]" />
+    </div>
+    <div class="flex absolute flex-row flex-nowrap w-auto h-auto left-0 right-0 justify-center items-center align-middle gap-x-4">
+        <div class="relative flex w-auto h-auto bottom-0 right-32 rotate-12 drop-shadow-2xl justify-center items-center align-middle z-20">
+            <AstroLogo class="absolute w-[4rem] left-0 right-0 top-0 bottom-0 justify-center items-center align-middle z-10" />
+        </div>
+        <div class="relative flex w-auto h-auto bottom-28 left-12 rotate-[35deg] drop-shadow-2xl justify-center items-center align-middle z-0">
+            <VSCodeLogo class="absolute w-[4rem] left-0 right-0 top-0 bottom-0 justify-center items-center align-middle z-10" />
+            <VSCodeLogo class="absolute w-[4rem] left-0 right-0 top-0 bottom-0 justify-center items-center align-middle z-0 stroke-white stroke-[4]" />
+        </div>
+        <div class="relative flex w-auto h-auto -top-4 left-28 rotate-45 drop-shadow-2xl justify-center items-center align-middle z-20">
+            <ReactLogo class="absolute w-[6rem] left-0 right-0 top-0 bottom-0 justify-center items-center align-middle z-10" />
+            <ReactLogo class="absolute w-[6rem] left-0 right-0 top-0 bottom-0 justify-center items-center align-middle z-0 stroke-white stroke-[4]" />
+        </div>
+    </div>
+</section>

@@ -8,6 +8,7 @@ export default {
     fontFamily: {
       playfair: ["Playfair Display", "sans-serif"],
       bricolage: ["Bricolage Grotesque", "sans-serif"],
+      climate: ["Climate Crisis", "sans-serif"],
     },
     extend: {
       colors: {
@@ -19,8 +20,8 @@ export default {
         grass: "#7d9387",
       },
       animation: {
-        marquee: 'marquee 30s linear infinite',
-        marquee2: 'marquee2 30s linear infinite'
+        marquee: 'marquee 50s linear infinite',
+        marquee2: 'marquee2 50s linear infinite'
       },
       keyframes: {
         marquee: {
